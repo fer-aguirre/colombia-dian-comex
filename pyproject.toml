@@ -1,0 +1,28 @@
+[project]
+name = "colombia_dian_comex"
+version = "0.1.0"
+description = "Análisis de datos de la Dirección de Impuestos y Aduanas Nacionales (DIAN) para comercio exterior en Colombia"
+readme = "README.md"
+requires-python = ">=3.14"
+authors = [
+    {name = "Fernanda Aguirre Ruiz"}
+]
+
+dependencies = [
+    "ipykernel",
+    "nbformat",
+    "pandas",
+    "polars",
+    "numpy",
+    "requests",
+    "plotnine",
+    "openpyxl",
+    "pyprojroot",
+]
+
+[build-system]
+requires = ["hatchling>=1.0.0"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = false
