@@ -1,8 +1,9 @@
 """Consulta y exportación de las bases de importaciones y exportaciones de la DIAN.
 
 Funciona tanto como librería (`from colombia_dian_comex.query import query_comex`)
-como CLI (`python -m colombia_dian_comex.query importaciones --years 2024
---subpartida 2701`). El archivo exportado es CSV por defecto
+como CLI (`colombia-dian-query importaciones --years 2024 --codigo 2701`, o
+`python -m colombia_dian_comex importaciones ...` si Windows bloquea el
+ejecutable). El archivo exportado es CSV por defecto
 (`formato`/--formato/-f también acepta "xlsx" y "parquet") y va por defecto
 al directorio actual; usar `output_dir`/--output/-o para exportarlo a otra
 carpeta (que se crea si no existe). El notebook de consulta pasa
@@ -159,8 +160,8 @@ def query_comex(
     flujo: str | Flow,
     years: int | Sequence[int],
     nombre: str | None = None,
+    codigo: str | Sequence[str] | None = None,
     nit: str | Sequence[str] | None = None,
-    subpartida: str | Sequence[str] | None = None,
 ) -> pl.DataFrame:
     """Consulta las tablas de importaciones o exportaciones de la DIAN.
 
@@ -170,21 +171,22 @@ def query_comex(
         nombre: Nombre (o parte del nombre) del importador o exportador. Se
             busca como texto literal y no distingue mayúsculas/minúsculas. En
             exportaciones, el nombre solo existe desde 2007; antes buscar por NIT.
+        codigo: Subpartida arancelaria (NCM) o lista de subpartidas,
+            completas (10 dígitos) o solo el comienzo; los puntos son
+            opcionales (ej. "2701" o "27.01").
         nit: NIT o lista de NIT del importador o exportador (sin dígito de
             verificación). Los puntos o guiones se ignoran.
-        subpartida: Subpartida arancelaria o lista de subpartidas, completas
-            (10 dígitos) o solo el comienzo (ej. "2701" o "27.01").
 
     Returns:
         DataFrame de polars con las filas que cumplen todos los filtros, sin
         las columnas que no tienen datos en los años consultados.
 
     Raises:
-        ValueError: Si no se indica ninguno de `nombre`, `nit` o `subpartida`.
+        ValueError: Si no se indica ninguno de `nombre`, `codigo` o `nit`.
     """
     flow = Flow(flujo)
-    if nombre is None and nit is None and subpartida is None:
-        raise ValueError("Debe indicar al menos `nombre`, `nit` o `subpartida`.")
+    if nombre is None and codigo is None and nit is None:
+        raise ValueError("Debe indicar al menos `nombre`, `codigo` o `nit`.")
     years_list = [years] if isinstance(years, int) else list(years)
 
     filters = []
@@ -196,10 +198,9 @@ def query_comex(
     if nit is not None:
         nits = [_digits(value) for value in ([nit] if isinstance(nit, str) else nit)]
         filters.append(pl.col(NIT_COLUMNS[flow]).is_in(nits))
-    if subpartida is not None:
+    if codigo is not None:
         codes = [
-            _digits(code)
-            for code in ([subpartida] if isinstance(subpartida, str) else subpartida)
+            _digits(code) for code in ([codigo] if isinstance(codigo, str) else codigo)
         ]
         filters.append(
             pl.any_horizontal(
@@ -217,23 +218,23 @@ def export_query_result(
     flujo: str | Flow,
     query_years: int | Sequence[int],
     query_nombre: str | None = None,
+    query_codigo: str | Sequence[str] | None = None,
     query_nit: str | Sequence[str] | None = None,
-    query_subpartida: str | Sequence[str] | None = None,
     output_dir: Path | None = None,
     formato: str = "csv",
 ) -> Path | None:
     """Exporta el resultado de una consulta a un archivo.
 
-    El nombre del archivo se arma con los parámetros de la consulta: flujo,
-    nombre, NIT, subpartida y rango de años.
+    El nombre del archivo se arma con los parámetros de la consulta:
+    `<flujo>_<nombre>_<codigo>_<nit>_<año o rango>.<formato>`.
 
     Args:
         df_result: DataFrame a exportar.
         flujo: Flujo consultado.
         query_years: Año o lista de años consultados.
         query_nombre: Nombre consultado (o None).
+        query_codigo: Subpartida(s) consultada(s) (o None).
         query_nit: NIT consultado(s) (o None).
-        query_subpartida: Subpartida(s) consultada(s) (o None).
         output_dir: Carpeta donde escribir el archivo. Si es `None`, se usa
             el directorio actual. Se crea automáticamente si no existe.
         formato: "csv" (default), "xlsx" o "parquet". No distingue
@@ -264,7 +265,7 @@ def export_query_result(
     if query_nombre:
         # Solo letras, números y guiones bajos, para que sea un nombre de archivo válido.
         name_parts.append(re.sub(r"\W+", "_", query_nombre.strip().lower()).strip("_"))
-    for query_codes in (query_nit, query_subpartida):
+    for query_codes in (query_codigo, query_nit):
         if query_codes:
             codes = [query_codes] if isinstance(query_codes, str) else query_codes
             name_parts.append("-".join(_digits(code) for code in codes))
@@ -293,10 +294,10 @@ def _build_parser() -> argparse.ArgumentParser:
         prog="colombia-dian-query",
         description=(
             "Consulta las bases de importaciones o exportaciones de la DIAN por año, "
-            "nombre o NIT del importador/exportador y/o subpartida, y exporta el "
-            "resultado (CSV por defecto, o XLSX/Parquet con --formato) en el "
-            "directorio actual o en la carpeta indicada con --output. Debe "
-            "indicarse --nombre, --nit y/o --subpartida."
+            "nombre del importador/exportador, subpartida (--codigo) y/o NIT, y "
+            "exporta el resultado (CSV por defecto, o XLSX/Parquet con --formato) "
+            "en el directorio actual o en la carpeta indicada con --output. Debe "
+            "indicarse --nombre, --codigo y/o --nit."
         ),
     )
     parser.add_argument(
@@ -325,21 +326,24 @@ def _build_parser() -> argparse.ArgumentParser:
         ),
     )
     parser.add_argument(
+        "-c",
+        "--codigo",
+        type=str,
+        nargs="+",
+        default=None,
+        metavar="SUBPARTIDA",
+        help=(
+            "Una o más subpartidas arancelarias (NCM) o su comienzo, con o sin "
+            "puntos (ej. --codigo 2701 84.71)."
+        ),
+    )
+    parser.add_argument(
         "--nit",
         type=str,
         nargs="+",
         default=None,
         metavar="NIT",
         help="Uno o más NIT del importador o exportador, sin dígito de verificación.",
-    )
-    parser.add_argument(
-        "-s",
-        "--subpartida",
-        type=str,
-        nargs="+",
-        default=None,
-        metavar="SUBPARTIDA",
-        help="Una o más subpartidas (o su comienzo), con o sin puntos (ej. --subpartida 2701 84.71).",
     )
     parser.add_argument(
         "-o",
@@ -368,7 +372,7 @@ def _build_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: Sequence[str] | None = None) -> int:
-    """Punto de entrada de `python -m colombia_dian_comex.query`.
+    """Punto de entrada de `colombia-dian-query` y `python -m colombia_dian_comex`.
 
     Args:
         argv: Argumentos de línea de comandos a parsear. Si es `None`, se
@@ -382,19 +386,19 @@ def main(argv: Sequence[str] | None = None) -> int:
     logging.basicConfig(
         level=logging.DEBUG if args.verbose else logging.INFO, format="%(message)s"
     )
-    if args.nombre is None and args.nit is None and args.subpartida is None:
-        parser.error("Debe indicar al menos --nombre, --nit o --subpartida.")
+    if args.nombre is None and args.codigo is None and args.nit is None:
+        parser.error("Debe indicar al menos --nombre, --codigo o --nit.")
 
     df_result = query_comex(
-        args.flujo, args.years, args.nombre, args.nit, args.subpartida
+        args.flujo, args.years, nombre=args.nombre, codigo=args.codigo, nit=args.nit
     )
     export_query_result(
         df_result,
         args.flujo,
         args.years,
-        args.nombre,
-        args.nit,
-        args.subpartida,
+        query_nombre=args.nombre,
+        query_codigo=args.codigo,
+        query_nit=args.nit,
         output_dir=args.output,
         formato=args.formato,
     )

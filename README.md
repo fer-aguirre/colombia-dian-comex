@@ -31,7 +31,7 @@ Este proyecto toma esos archivos y arma **una tabla por flujo y año**:
 
 **Si prefieres la terminal:**
 ```bash
-uv run colombia-dian-query importaciones --years 2024 --subpartida 2701
+uv run colombia-dian-query importaciones --years 2024 --codigo 2701
 ```
 
 **Si vas a analizar los datos:** lee primero [Qué tener en cuenta al analizar](#qué-tener-en-cuenta-al-analizar) y el [diccionario de datos](DICCIONARIO.md).
@@ -52,7 +52,7 @@ uv sync
 
 `uv sync` crea una carpeta `.venv` con todo lo necesario, incluidos los comandos `colombia-dian-query`, `colombia-dian-download` y `colombia-dian-update`. Los comandos y las consultas encuentran las carpetas `data/` y `outputs/` del proyecto aunque se corran desde otra carpeta.
 
-> **En Windows**, si un comando `uv run colombia-dian-...` falla con un error de que una directiva bloqueó el archivo, usa la forma equivalente con `python -m`: por ejemplo `uv run python -m colombia_dian_comex.query` en vez de `uv run colombia-dian-query`.
+> **En Windows**, si un comando `uv run colombia-dian-...` falla con un error de que una directiva bloqueó el archivo, usa la forma equivalente con `python -m`: por ejemplo `uv run python -m colombia_dian_comex` en vez de `uv run colombia-dian-query`, y `uv run python -m colombia_dian_comex.download` o `.update` para los otros dos.
 
 ---
 
@@ -68,29 +68,29 @@ Si prefieres armar todo desde cero con los archivos originales de la DIAN, sigue
 
 ## Consultar los datos
 
-Las consultas funcionan igual desde un notebook o desde la terminal. Hay que indicar el flujo, los años y al menos un **nombre**, un **NIT** o una **subpartida**, para no recorrer millones de filas sin acotar.
+Las consultas funcionan igual desde un notebook o desde la terminal. Hay que indicar el flujo, los años y al menos un **nombre**, un **código** (subpartida) o un **NIT**, para no recorrer millones de filas sin acotar.
 
 | Filtro | Qué es | Ejemplo |
 |---|---|---|
 | `flujo` | `importaciones` o `exportaciones` | `"importaciones"` |
 | `years` | Año o lista de años (no hace falta que sean consecutivos) | `2024` / `[2023, 2024, 2025]` |
 | `nombre` *(opcional)* | Nombre de la empresa colombiana que importa o exporta. Busca coincidencias parciales, sin distinguir mayúsculas. En exportaciones solo existe desde 2007. | `"acme"` |
-| `nit` *(opcional)* | NIT de la empresa, sin dígito de verificación | `"890900608"` |
-| `subpartida` *(opcional)* | Subpartida arancelaria, completa (10 dígitos) o solo el comienzo; los puntos son opcionales | `"2701"` / `"27.01"` |
+| `codigo` *(opcional)* | Subpartida arancelaria (código NCM), completa (10 dígitos) o solo el comienzo; los puntos son opcionales. Uno o varios | `"2701"` / `"27.01"` / `["2701", "2704"]` |
+| `nit` *(opcional)* | NIT de la empresa, sin dígito de verificación. Uno o varios | `"890900608"` |
 
 **Desde un notebook:**
 ```python
 from colombia_dian_comex import utils
 from colombia_dian_comex.query import export_query_result, query_comex
 
-resultado = query_comex("importaciones", [2024, 2025], subpartida="2701")
-export_query_result(resultado, "importaciones", [2024, 2025], query_subpartida="2701",
+resultado = query_comex("importaciones", [2024, 2025], codigo="2701")
+export_query_result(resultado, "importaciones", [2024, 2025], query_codigo="2701",
                     output_dir=utils.outputs_tables_dir(), formato="xlsx")
 ```
 
 **Desde la terminal:**
 ```bash
-uv run colombia-dian-query importaciones --years 2024 2025 -s 2701 -f xlsx
+uv run colombia-dian-query importaciones --years 2024 2025 -c 2701 -f xlsx
 uv run colombia-dian-query exportaciones --years 2023 --nombre "acme" -o outputs/tables
 ```
 Por defecto guarda un CSV en la carpeta desde la que corres el comando. Con `-o` eliges otra carpeta y con `-f` el formato: `csv`, `xlsx` o `parquet`. Todas las opciones aparecen con `--help`.
@@ -230,6 +230,8 @@ Una corrida procesa como mucho 6 GB de archivos de la DIAN (unas 3,5 horas de de
 ```
 colombia_dian_comex/
 ├─ colombia_dian_comex/       # Código del proyecto
+│  ├─ __init__.py             # Expone query_comex y export_query_result
+│  ├─ __main__.py             # Permite `python -m colombia_dian_comex` (consultas)
 │  ├─ pipeline.py             # Descarga, conversión y validación
 │  ├─ download.py             # Descarga desde la terminal
 │  ├─ build.py                # Tablas finales: unificación, limpieza, tipos, M49
