@@ -1,0 +1,2 @@
+# Copias oficiales de la DIAN: se guardan byte a byte (sus hash están en docs/FUENTES.md).
+docs/*.html -text

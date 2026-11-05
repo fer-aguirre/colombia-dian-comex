@@ -1,0 +1,10 @@
+CODIGO,NOMBRE,FILAS,DESDE,HASTA,FUENTE
+1,Reembolsable,60221897,200101,202607,Tabla TIPO DE IMPORTACIÓN de la ficha técnica; nombres tal como los publica la DIAN en sus bases.
+2,Donación,63196,200101,202607,Tabla TIPO DE IMPORTACIÓN de la ficha técnica; nombres tal como los publica la DIAN en sus bases.
+3,Importación temporal para reparación o mejoramiento,16184,200101,202607,Tabla TIPO DE IMPORTACIÓN de la ficha técnica; nombres tal como los publica la DIAN en sus bases.
+4,Importación por reposición de partes por indemnización de seguros,1643,200101,202607,Tabla TIPO DE IMPORTACIÓN de la ficha técnica; nombres tal como los publica la DIAN en sus bases.
+5,Muestra promocional,84168,200101,202607,Tabla TIPO DE IMPORTACIÓN de la ficha técnica; nombres tal como los publica la DIAN en sus bases.
+6,Muestra para exhibición,14384,200101,202607,Tabla TIPO DE IMPORTACIÓN de la ficha técnica; nombres tal como los publica la DIAN en sus bases.
+7,Muestra experimental,73345,200101,202607,Tabla TIPO DE IMPORTACIÓN de la ficha técnica; nombres tal como los publica la DIAN en sus bases.
+8,Resto de muestras,66306,200101,202607,Tabla TIPO DE IMPORTACIÓN de la ficha técnica; nombres tal como los publica la DIAN en sus bases.
+99,Otras no reembolsables,4846770,200101,202607,Tabla TIPO DE IMPORTACIÓN de la ficha técnica; nombres tal como los publica la DIAN en sus bases.

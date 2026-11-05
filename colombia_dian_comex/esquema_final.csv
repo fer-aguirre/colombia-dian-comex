@@ -1,0 +1,252 @@
+FLUJO,ORDEN,COLUMNA,TIPO,CERO_ES_VACIO,NOTA
+importaciones,1,PERIODO,entero,false,Mes del archivo de la DIAN (aaaamm). Columna agregada.
+importaciones,2,BANC_CODIGO_BANCO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,3,COD_ADUANA_PRESENTADA,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,4,ADUANA_PRESENTADA,texto,false,""
+importaciones,5,CODIGO_SUCURSAL,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,6,CODIGO_CAJERO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,7,CONSECUTIVO_CAJERO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,8,DIGITO_VERIFICACION_DOC,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,9,CODIGO_MODALIDAD_DECLARAC,texto,false,""
+importaciones,10,COD_TIPO_DECLARACION,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,11,TIPO_DECLARACION,texto,false,""
+importaciones,12,NUM_DECLARACION_ANT,codigo,true,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,13,FECHA_DECLARACION_ANT,fecha,true,aaaammdd convertido a fecha; vacío si no es una fecha completa.
+importaciones,14,MANIFIESTO_DE_CARGA,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,15,FECHA_MANIFIESTO,fecha,false,aaaammdd convertido a fecha; vacío si no es una fecha completa.
+importaciones,16,DOCUMENTO_TRANSPORTE,texto,false,""
+importaciones,17,MODA_CODIGO_MODALIDAD,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,18,CODIGO_DEPOSITO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,19,RAZON_SOCIAL_DECLARANTE,texto,false,""
+importaciones,20,TIPO_IDENTIFICAC_DECLARAN,texto,false,""
+importaciones,21,NIT_DECLARANTE,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,22,DIGITO_VERIFI_NIT_DECLARA,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,23,NOMBRE_IMPORTADOR,texto,false,""
+importaciones,24,TIPO_IDENTIFICAC_IMPORTAD,texto,false,""
+importaciones,25,NIT_IMPORTADOR,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,26,DIGITO_VERIFI_NIT_IMPORTA,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,27,CIUDAD_PAIS_IMPORTADOR,texto,false,""
+importaciones,28,DIRECCION_IMPORTADOR,texto,false,""
+importaciones,29,NOMBRE_EXPORTADOR,texto,false,""
+importaciones,30,TIPO_IDENTIFICAC_EXPORTAD,texto,false,""
+importaciones,31,NUMERO_IDENTIFICAC_EXPORT,texto,false,""
+importaciones,32,DIGITO_VERIFI_NIT_EXPORTA,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,33,DIRECCION_EXPORTADOR,texto,false,""
+importaciones,34,CIUDAD_PAIS_EXPORTADOR,texto,false,""
+importaciones,35,ACTIVIDAD_ECONOMICA_SEC,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,36,CODIGO_PAIS_PROCEDENCIA,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,37,CODIGO_PAIS_PROCEDENCIA_M49,codigo,false,"Código M49 de CODIGO_PAIS_PROCEDENCIA: el original desde 2025; hasta 2024, convertido desde ALADI con la correlativa oficial (vacío si no tiene equivalente). Columna agregada."
+importaciones,38,PAIS_PROCEDENCIA,texto,false,""
+importaciones,39,COD_MODO_TRANSPORTE,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,40,MODO_TRANSPORTE,texto,false,""
+importaciones,41,COD_BANDERA_TRANSPORTE,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,42,COD_BANDERA_TRANSPORTE_M49,codigo,false,"Código M49 de COD_BANDERA_TRANSPORTE: el original desde 2025; hasta 2024, convertido desde ALADI con la correlativa oficial (vacío si no tiene equivalente). Columna agregada."
+importaciones,43,BANDERA_TRANSPORTE,texto,false,""
+importaciones,44,EMPRESA_TRANSPORTADORA,texto,false,""
+importaciones,45,CODIGO_ENTIDAD_INTERMEDIA,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,46,TASA_CAMBIO,decimal,false,""
+importaciones,47,COD_DEPARTAMENTO_DESTINO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,48,DEPARTAMENTO_DESTINO,texto,false,""
+importaciones,49,COD_MODALIDAD_IMPORTACION,texto,false,""
+importaciones,50,NUM_CUOTAS_O_MESES,decimal,false,""
+importaciones,51,SUBPARTIDA_ARANCELARIA,codigo,false,Completada a 10 dígitos con ceros a la izquierda (la DIAN publica algunas sin el cero inicial).
+importaciones,52,PESO_NETO,decimal,false,""
+importaciones,53,VALOR_FOB_USD,decimal,false,""
+importaciones,54,CODIGO_PAIS_ORIGEN,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,55,CODIGO_PAIS_ORIGEN_M49,codigo,false,"Código M49 de CODIGO_PAIS_ORIGEN: el original desde 2025; hasta 2024, convertido desde ALADI con la correlativa oficial (vacío si no tiene equivalente). Columna agregada."
+importaciones,56,PAIS_ORIGEN,texto,false,""
+importaciones,57,CODIGO_ACUERDO,texto,false,""
+importaciones,58,PESO_BRUTO,decimal,false,""
+importaciones,59,FLETES_SEGUROS1,decimal,false,""
+importaciones,60,VALOR_AJUSTE_USD,decimal,false,""
+importaciones,61,VALOR_ADUANA_USD,decimal,false,""
+importaciones,62,CODIGO_EMBALAJE,texto,false,""
+importaciones,63,CLASE_DE_EMBALAJE,texto,false,""
+importaciones,64,NUMERO_BULTOS,decimal,false,""
+importaciones,65,CANTIDAD_SUBPARTIDAS,decimal,false,""
+importaciones,66,CANTIDAD,decimal,false,""
+importaciones,67,COD_UNIDAD_COMERCIAL,texto,false,""
+importaciones,68,UNIDAD_COMERCIAL,texto,false,""
+importaciones,69,NUM_REGISTRO_LICENCIA,texto,true,""
+importaciones,70,CODIGO_OFICINA,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,71,AÑO_REGISTRO_LICENCIA,codigo,true,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,72,DESCRIPCION_MERCANCIA,texto,false,""
+importaciones,73,PORCENTAJE_ARANCEL,decimal,false,""
+importaciones,74,BASE_ARANCEL,decimal,false,""
+importaciones,75,TOTAL_LIQUIDADO_ARANCEL,decimal,false,""
+importaciones,76,PORCENTAJE_IVA,decimal,false,""
+importaciones,77,BASE_IVA,decimal,false,""
+importaciones,78,TOTAL_LIQUIDADO_IVA,decimal,false,""
+importaciones,79,PORCENTAJE_OTROS1,decimal,false,""
+importaciones,80,BASE_OTROS1,decimal,false,""
+importaciones,81,SUBTOTAL_OTROS1,decimal,false,""
+importaciones,82,TOTAL_ITEM1,decimal,false,""
+importaciones,83,VALOR_TOTAL_ARANCEL,decimal,false,""
+importaciones,84,VALOR_TOTAL_IVA,decimal,false,""
+importaciones,85,VALOR_TOTAL_OTROS,decimal,false,""
+importaciones,86,TOTAL_LIQUIDADO_SANCION,decimal,false,""
+importaciones,87,TOTAL_LIQUIDADO,decimal,false,""
+importaciones,88,PAGO_TOTAL,decimal,false,""
+importaciones,89,FECHA_PRESENTACION,fecha,false,aaaammdd convertido a fecha; vacío si no es una fecha completa.
+importaciones,90,NUMERO_FORMULARIO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,91,VALOR_PAGOS_ANTERIORES,decimal,false,""
+importaciones,92,COD_ADUANA_ANTERIOR,codigo,true,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,93,NUM_DECLARACION_EXPORT,codigo,true,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,94,FECHA_DECLARACION_EXPORT,fecha,true,aaaammdd convertido a fecha; vacío si no es una fecha completa.
+importaciones,95,COD_ADUANA_EXPORT,codigo,true,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,96,COD_CLASE_IMPORTADOR,texto,false,""
+importaciones,97,CLASE IMPORTADOR,texto,false,""
+importaciones,98,CODIGO_DEPTO_IMPORTADOR,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,99,DEPARTAMENTO_IMPORTADOR,texto,false,""
+importaciones,100,CODIGO_PAIS_EXPORTADOR,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,101,CODIGO_PAIS_EXPORTADOR_M49,codigo,false,"Código M49 de CODIGO_PAIS_EXPORTADOR: el original desde 2025; hasta 2024, convertido desde ALADI con la correlativa oficial (vacío si no tiene equivalente). Columna agregada."
+importaciones,102,PAIS_EXPORTADOR,texto,false,""
+importaciones,103,NUME_DECLARA_CAMBIO,texto,true,""
+importaciones,104,FECHA_DECLARA_CAMBIO,fecha,true,aaaammdd convertido a fecha; vacío si no es una fecha completa.
+importaciones,105,COD_FORMA_PAGO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,106,FORMA_PAGO,texto,false,""
+importaciones,107,COD_TIPO_IMPORTACION,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,108,TIPO_IMPORTACION,texto,false,""
+importaciones,109,CODIGO_PAIS_COMPRA,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,110,CODIGO_PAIS_COMPRA_M49,codigo,false,"Código M49 de CODIGO_PAIS_COMPRA: el original desde 2025; hasta 2024, convertido desde ALADI con la correlativa oficial (vacío si no tiene equivalente). Columna agregada."
+importaciones,111,PAIS_COMPRA,texto,false,""
+importaciones,112,TIPO_DOCUMENTO1,texto,false,""
+importaciones,113,USUARIO_DIAN1,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,114,CODIGO_USUARIO_DIAN1,codigo,true,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,115,NUM_RECIBO_PAGO_ANTERIOR,codigo,true,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,116,FECHA_RECIBO_PAGO_ANTERIOR,fecha,true,aaaammdd convertido a fecha; vacío si no es una fecha completa.
+importaciones,117,NRO_CERTIFICADO_INSPECCION,codigo,true,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,118,FECHA_DOCUMENTO_TRANSP,fecha,false,aaaammdd convertido a fecha; vacío si no es una fecha completa.
+importaciones,119,TOTAL_A_PAGAR_ARANCEL,decimal,false,""
+importaciones,120,TOTAL_A_PAGAR_IVA,decimal,false,""
+importaciones,121,OTROS_PAGADOS,decimal,false,""
+importaciones,122,TOTAL_A_PAGAR_SANCION,decimal,false,""
+importaciones,123,TELEFONO_IMPORTADOR,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,124,NUM_ACEPTACION_DECLARACION,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,125,FECHA_ACEPTACION_DECLARACION,fecha,false,aaaammdd convertido a fecha; vacío si no es una fecha completa.
+importaciones,126,VALOR_CUOTA_USD,decimal,false,""
+importaciones,127,PER_PAGO_CUOTA_1,decimal,false,""
+importaciones,128,VALOR_SEGUROS_USD,decimal,false,""
+importaciones,129,VALOR_FLETES_USD,decimal,false,""
+importaciones,130,VALOR_OTROS_GASTOS_USD,decimal,false,""
+importaciones,131,LUGAR_INGRESO_MCIA,texto,false,""
+importaciones,132,COD_LUGAR_INGRESO_MCIA,texto,false,""
+importaciones,133,IDENTIFICADOR_DOCUMENTO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,134,IDENTIFICACION_FORMULARIO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,135,CODIGO_MUNICIPIO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,136,DOCTO_IDENTIF_DECLAR,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,137,NOMBRE_DECLARANTE,texto,false,""
+importaciones,138,EMAIL_EXPORTADOR,texto,false,""
+importaciones,139,NUMERO_FACTURA,texto,false,""
+importaciones,140,FECHA_FACTURA,fecha,false,aaaammdd convertido a fecha; vacío si no es una fecha completa.
+importaciones,141,PROGRAMA_NUMERO,codigo,true,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,142,PORCENTAJE_SANCION,decimal,false,""
+importaciones,143,BASE_SANCION,decimal,false,""
+importaciones,144,VALOR_CIF_USD,decimal,false,""
+importaciones,145,CODIGO_COMPLEMENTARIO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,146,CODIGO_SUPLEMENTARIO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+importaciones,147,TOTAL_LIQUIDADO_ARANCEL_USD,decimal,false,""
+importaciones,148,TOTAL_LIQUIDADO_IVA_USD,decimal,false,""
+importaciones,149,PORCENTAJE_SALVAGUARDIA,decimal,false,""
+importaciones,150,BASE_SALVAGUARDIA,decimal,false,""
+importaciones,151,TOTAL_LIQUIDADO_SALVAGUARDIA,decimal,false,""
+importaciones,152,TOTAL_A_PAGAR_SALVAGUARDIA,decimal,false,""
+importaciones,153,TOTAL_LIQUIDADO_SALVAGUARDIA_USD,decimal,false,""
+importaciones,154,PORCENTAJE_DERECHOS_COMP,decimal,false,""
+importaciones,155,BASE_DERECHOS_COMP,decimal,false,""
+importaciones,156,TOTAL_LIQUIDADO_DERECHOS_COMP,decimal,false,""
+importaciones,157,TOTAL_A_PAGAR_DERECHOS_COMP,decimal,false,""
+importaciones,158,TOTAL_LIQUID_DERECHOS_COMP_USD,decimal,false,""
+importaciones,159,PORCENTAJE_ANTIDUMPING,decimal,false,""
+importaciones,160,BASE_ANTIDUMPING,decimal,false,""
+importaciones,161,TOTAL_LIQUIDADO_ANTIDUMPING,decimal,false,""
+importaciones,162,TOTAL_A_PAGAR_ANTIDUMPING,decimal,false,""
+importaciones,163,TOTAL_LIQUIDADO_ANTIDUMPING_USD,decimal,false,""
+importaciones,164,PORCENTAJE_RESCATE,decimal,false,""
+importaciones,165,BASE_RESCATE,decimal,false,""
+importaciones,166,TOTAL_LIQUIDADO_RESCATE,decimal,false,""
+importaciones,167,TOTAL_A_PAGAR_RESCATE,decimal,false,""
+importaciones,168,TOTAL_LIQUIDADO_USD,decimal,false,""
+importaciones,169,PERIODICIDAD_PAGO_CUOTA,texto,false,""
+importaciones,170,COD_UNIDAD_COMERCIAL_2001_2002,texto,false,""
+exportaciones,1,PERIODO,entero,false,Mes del archivo de la DIAN (aaaamm). Columna agregada.
+exportaciones,2,FECHA_PROCESO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,3,NUMERO_SERIE,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,4,OFICINA,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,5,COD_ADUANA_DESPACHO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,6,ADUANA_DESPACHO,texto,false,""
+exportaciones,7,TIPO_IDENT,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,8,NIT_EXPORTADOR,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,9,TIPO_USUARIO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,10,COD_USUARIO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,11,CLASE_EXPORTADOR,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,12,COD_DPTO_EXPORTADOR,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,13,COD_PAIS_DESTINO_NUM,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,14,COD_PAIS_DESTINO_NUM_M49,codigo,false,"Código M49 de COD_PAIS_DESTINO_NUM: el original desde 2025; hasta 2024, convertido desde ALADI con la correlativa oficial (vacío si no tiene equivalente). Columna agregada."
+exportaciones,15,COD_PAIS_DESTINO_ALF,texto,false,""
+exportaciones,16,COD_PAIS_DESTINO,texto,false,""
+exportaciones,17,PAIS_DESTINO_FINAL,texto,false,""
+exportaciones,18,CIUDAD_DESTINATARIO,texto,false,""
+exportaciones,19,NUM_SOLICITUD_AUTO_EMBARQUE,texto,false,""
+exportaciones,20,TIPO_DECLARACION,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,21,TIPO_DESPACHO,texto,false,""
+exportaciones,22,COD_LUGAR_SALIDA_NUM,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,23,COD_LUG_SALIDA_ALF,texto,false,""
+exportaciones,24,COD_REGION_PROCEDENCIA,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,25,REGION_PROCEDENCIA,texto,false,""
+exportaciones,26,NUM__DECLA_EXPORTACION_ANT,codigo,true,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,27,FECH_DECLA_EXPORTACION_ANT,codigo,true,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,28,NUM_DECLARACION_PRECEDENTE,codigo,true,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,29,FECH_DECLA_PRECEDENTE,codigo,true,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,30,COD_MODALIDAD_PRECEDENTE,texto,false,""
+exportaciones,31,COD_MONEDA_TRANSACCION,texto,false,""
+exportaciones,32,COD_MODO_TRANSPORTE,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,33,MODO_TRANSPORTE,texto,false,""
+exportaciones,34,BANDERA,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,35,BANDERA_M49,codigo,false,"Código M49 de BANDERA: el original desde 2025; hasta 2024, convertido desde ALADI con la correlativa oficial (vacío si no tiene equivalente). Columna agregada."
+exportaciones,36,COD_NACIONALIDAD_BANDERA,texto,false,""
+exportaciones,37,NACIONALIDAD_BANDERA,texto,false,""
+exportaciones,38,COD_REGIMEN_CAN,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,39,COD_MODALIDAD_EXPORTACION,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,40,MODALIDAD_EXPORTACION,texto,false,""
+exportaciones,41,FORMA_PAGO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,42,COD_TIPO_EMBARQUE,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,43,TIPO_DE_EMBARQUE,texto,false,""
+exportaciones,44,COD_TIPO_DATOS,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,45,TIPO_DE_DATOS,texto,false,""
+exportaciones,46,TIPO_CERTIFICADO_ORIGEN,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,47,SISTEMAS_ESPECIALES,texto,false,""
+exportaciones,48,COD_EXPORTACION_TRANSITO,texto,false,""
+exportaciones,49,EXPORTACION_EN_TRANSITO,texto,false,""
+exportaciones,50,SUBPARTIDA,codigo,false,Completada a 10 dígitos con ceros a la izquierda (la DIAN publica algunas sin el cero inicial).
+exportaciones,51,COD_REGION_ORIGEN,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,52,REGION_DE_ORIGEN,texto,false,""
+exportaciones,53,COD_UNIDAD_FISICA_NUM,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,54,COD_UNIDAD_FISICA_ALF,texto,false,""
+exportaciones,55,UNIDAD_FISICA,texto,false,""
+exportaciones,56,CANTIDAD_UNIDADES_FISICAS,decimal,false,""
+exportaciones,57,PESO_BRUTO_KGS,decimal,false,""
+exportaciones,58,PESO_NETO_KGS,decimal,false,""
+exportaciones,59,VALOR_FOB_USD,decimal,false,""
+exportaciones,60,VALOR_FOB_PESOS,decimal,false,""
+exportaciones,61,VLR_SERIE_AGREGADO_NAL_USD,decimal,false,""
+exportaciones,62,VALOR_SERIE_FLETES_USD,decimal,false,""
+exportaciones,63,VALOR_SERIE_SEGUROS_USD,decimal,false,""
+exportaciones,64,VLR_SERIE_OTROS_GASTOS_USD,decimal,false,""
+exportaciones,65,COD_ADUANA_SALIDA,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,66,ADUANA_SALIDA,texto,false,""
+exportaciones,67,FECHA_SOLICITUD_AUTO_EMBARQUE,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,68,NUMERO_FORMULARIO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,69,FECHA_DECLARACION_EXPORTACION,fecha,false,aaaammdd convertido a fecha; vacío si no es una fecha completa.
+exportaciones,70,RAZON_SOCIAL_EXPORTADOR,texto,false,""
+exportaciones,71,DIREC_EXPORTADOR,texto,false,""
+exportaciones,72,NIT_DECLARANTE,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,73,RAZON_SOCIAL_DECLARANTE,texto,false,""
+exportaciones,74,RAZON_SOCIAL_DESTINATARIO,texto,false,""
+exportaciones,75,DOMICILIO_DESTINATARIO,texto,false,""
+exportaciones,76,NUMERO_SERIE_2001_2004,texto,false,""
+exportaciones,77,NUM_MANIFIESTO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,78,COD_MONEDA_TRANSACCION_2004,texto,false,""
+exportaciones,79,NUM_DOC_EXPO_ADUANA,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,80,COD_OFICINA_REINTEGRO,codigo,false,Código o número guardado como texto; se quita el '.0' que agrega Excel.
+exportaciones,81,COD_MONEDA_TRANSACCION_2001_2003,texto,false,""

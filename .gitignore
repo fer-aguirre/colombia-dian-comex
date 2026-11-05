@@ -132,3 +132,13 @@ cython_debug/
 # Secret files
 config.ini
 
+# Jupyter Notebooks
+notebooks/0.4*.ipynb
+
+# Data: solo se versionan los .gitkeep y el manifest de meses procesados.
+data/raw/*
+data/interim/*
+data/processed/*
+!data/*/.gitkeep
+!data/manifest.json
+outputs/

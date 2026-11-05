@@ -1,0 +1,76 @@
+# Actualiza las tablas con los meses nuevos o corregidos que publique la DIAN.
+#
+# La DIAN no publica en una fecha fija (alrededor de 35 días después del mes
+# para exportaciones y 45 para importaciones) y además vuelve a subir meses
+# viejos corregidos, así que se revisa una vez por semana. Si algún archivo
+# mensual es nuevo o cambió, se procesan solo esos meses y los años afectados
+# (ver colombia_dian_comex/update.py); se reemplazan esos archivos en el release
+# "datos" y se commitea data/manifest.json. Si no cambió nada, termina en un
+# par de minutos sin publicar nada.
+name: Actualizar datos
+
+on:
+  schedule:
+    # Lunes a las 08:17 hora de Colombia (UTC-5, sin horario de verano) =
+    # 13:17 UTC. Fuera de la hora en punto, cuando GitHub demora más los
+    # workflows programados.
+    - cron: "17 13 * * 1"
+  # Permite correrlo a mano desde la pestaña Actions.
+  workflow_dispatch:
+
+permissions:
+  # Necesario para subir archivos al release y pushear el manifest.
+  contents: write
+
+# Nunca dos actualizaciones a la vez: la segunda espera a que termine la primera.
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+env:
+  # Un único release, con un archivo por flujo y año: en cada actualización
+  # solo se reemplazan los archivos de los años que cambiaron.
+  RELEASE_TAG: datos
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    # El servidor de la DIAN entrega ~0,5 MB/s; una corrida procesa como
+    # mucho 6 GB (ver --max-gb en update.py) y deja el resto para la siguiente.
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: astral-sh/setup-uv@v10.2.0
+
+      - name: Instalar dependencias
+        run: uv sync --frozen --no-dev
+
+      - name: Procesar meses nuevos o corregidos
+        id: update
+        run: uv run python -m colombia_dian_comex.update
+
+      - name: Publicar archivos actualizados
+        if: steps.update.outputs.updated == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CHANGED_ASSETS: ${{ steps.update.outputs.changed_assets }}
+          PROCESSED_FILES: ${{ steps.update.outputs.processed_files }}
+          LAST_MONTHS: ${{ steps.update.outputs.last_months }}
+        run: |
+          # shellcheck disable=SC2086 # CHANGED_ASSETS is a space-separated list of paths.
+          gh release upload "$RELEASE_TAG" $CHANGED_ASSETS data/processed/cobertura_columnas.parquet --clobber
+          today="$(TZ=America/Bogota date +%Y-%m-%d)"
+          gh release edit "$RELEASE_TAG" \
+            --notes "Bases estadísticas de comercio exterior de la DIAN, un archivo por flujo y año, desde 2001. Último mes disponible: ${LAST_MONTHS}. Actualizado el ${today}; archivos de la DIAN procesados en esta actualización: ${PROCESSED_FILES}."
+
+      - name: Commitear manifest
+        if: steps.update.outputs.updated == 'true'
+        env:
+          LAST_MONTHS: ${{ steps.update.outputs.last_months }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/manifest.json
+          git commit -m "Actualizar datos (${LAST_MONTHS})"
+          git push

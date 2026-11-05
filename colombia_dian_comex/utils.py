@@ -1,14 +1,31 @@
-from pathlib import Path
-from typing import Callable
+"""Rutas a las carpetas del proyecto.
 
-from pyprojroot import here
+Las rutas se arman a partir de la ubicación de este paquete, no de la carpeta
+desde la que se corre el código, así que las consultas y comandos encuentran
+`data/` y `outputs/` aunque se ejecuten desde cualquier otra carpeta.
+"""
+
+from collections.abc import Callable
+from pathlib import Path
+
+# The package lives in <project>/colombia_dian_comex/, installed in editable
+# mode by `uv sync`.
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 
 def make_dir_function(*parts: str) -> Callable[..., Path]:
-    """Build a function returning a path under the project root, extended by any given parts."""
+    """Build a function returning a path under the project root.
+
+    Args:
+        *parts: Folders under the project root (e.g. "data", "raw").
+
+    Returns:
+        A function that extends that folder with any given parts.
+    """
 
     def dir_path(*args: str) -> Path:
-        return here().joinpath(*parts, *args)
+        """Return the folder extended with the given parts."""
+        return PROJECT_ROOT.joinpath(*parts, *args)
 
     return dir_path
 

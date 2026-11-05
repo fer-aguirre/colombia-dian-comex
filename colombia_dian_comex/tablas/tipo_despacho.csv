@@ -1,0 +1,4 @@
+CODIGO,NOMBRE,FILAS,DESDE,HASTA,FUENTE
+1,Inicial,19712031,200701,202608,"Tabla TIPO DE DESPACHO - EXPORTACIÓN de la ficha técnica (1 Inicial, 2 Corrección, 3 Modificación); nombres tal como los publica la DIAN desde 2007 (incluido 'Correción'). Solo desde 2007: en 2004-2006 la columna rotulada TIPO_DESPACHO trae el lugar de salida."
+2,Correción,369682,200701,202608,"Tabla TIPO DE DESPACHO - EXPORTACIÓN de la ficha técnica (1 Inicial, 2 Corrección, 3 Modificación); nombres tal como los publica la DIAN desde 2007 (incluido 'Correción'). Solo desde 2007: en 2004-2006 la columna rotulada TIPO_DESPACHO trae el lugar de salida."
+3,Modificación,2745,200701,202605,"Tabla TIPO DE DESPACHO - EXPORTACIÓN de la ficha técnica (1 Inicial, 2 Corrección, 3 Modificación); nombres tal como los publica la DIAN desde 2007 (incluido 'Correción'). Solo desde 2007: en 2004-2006 la columna rotulada TIPO_DESPACHO trae el lugar de salida."

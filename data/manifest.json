@@ -1,0 +1,4966 @@
+{
+  "importaciones": {
+    "200101": {
+      "name": "01_Importaciones_2001_Enero.zip",
+      "size": 61899508,
+      "modified": "20241105154405",
+      "rows": 90725,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200102": {
+      "name": "02_Importaciones_2001_Febrero.zip",
+      "size": 68957137,
+      "modified": "20241105154417",
+      "rows": 102062,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200103": {
+      "name": "03_Importaciones_2001_Marzo.zip",
+      "size": 74114033,
+      "modified": "20241105154435",
+      "rows": 109441,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200104": {
+      "name": "04_Importaciones_2001_Abril.zip",
+      "size": 67992005,
+      "modified": "20241105154453",
+      "rows": 100800,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200105": {
+      "name": "05_Importaciones_2001_Mayo.zip",
+      "size": 74355043,
+      "modified": "20241105154518",
+      "rows": 108737,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200106": {
+      "name": "06_Importaciones_2001_Junio.zip",
+      "size": 69800609,
+      "modified": "20241105154528",
+      "rows": 101851,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200107": {
+      "name": "07_Importaciones_2001_Julio.zip",
+      "size": 71391777,
+      "modified": "20241105154540",
+      "rows": 104140,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200108": {
+      "name": "08_Importaciones_2001_Agosto.zip",
+      "size": 76608872,
+      "modified": "20241105154559",
+      "rows": 112004,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200109": {
+      "name": "09_Importaciones_2001_Septiembre.zip",
+      "size": 65923805,
+      "modified": "20241105154615",
+      "rows": 96502,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200110": {
+      "name": "10_Importaciones_2001_Octubre.zip",
+      "size": 79988423,
+      "modified": "20241105154625",
+      "rows": 117672,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200111": {
+      "name": "11_Importaciones_2001_Noviembre.zip",
+      "size": 78102064,
+      "modified": "20241105154636",
+      "rows": 114296,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200112": {
+      "name": "12_Importaciones_2001_Diciembre.zip",
+      "size": 66248631,
+      "modified": "20241105154652",
+      "rows": 97032,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200201": {
+      "name": "01_Importaciones_2002_Enero.zip",
+      "size": 65824244,
+      "modified": "20241105154807",
+      "rows": 96549,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200202": {
+      "name": "02_Importaciones_2002_Febrero.zip",
+      "size": 68727564,
+      "modified": "20241105154839",
+      "rows": 100925,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200203": {
+      "name": "03_Importaciones_2002_Marzo.zip",
+      "size": 66963863,
+      "modified": "20241105154914",
+      "rows": 98713,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200204": {
+      "name": "04_Importaciones_2002_Abril.zip",
+      "size": 83753346,
+      "modified": "20241105154924",
+      "rows": 122584,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200205": {
+      "name": "05_Importaciones_2002_Mayo.zip",
+      "size": 78158659,
+      "modified": "20241105154935",
+      "rows": 114247,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200206": {
+      "name": "06_Importaciones_2002_Junio.zip",
+      "size": 67546796,
+      "modified": "20241105154946",
+      "rows": 98473,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200207": {
+      "name": "07_Importaciones_2002_Julio.zip",
+      "size": 77891736,
+      "modified": "20241105154955",
+      "rows": 113683,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200208": {
+      "name": "08_Importaciones_2002_Agosto.zip",
+      "size": 75285551,
+      "modified": "20241105155004",
+      "rows": 110317,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200209": {
+      "name": "09_Importaciones_2002_Septiembre.zip",
+      "size": 76263361,
+      "modified": "20241105155012",
+      "rows": 112700,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200210": {
+      "name": "10_Importaciones_2002_Octubre.zip",
+      "size": 83662217,
+      "modified": "20241105155022",
+      "rows": 123176,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200211": {
+      "name": "11_Importaciones_2002_Noviembre.zip",
+      "size": 76186754,
+      "modified": "20241105155031",
+      "rows": 111408,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200212": {
+      "name": "12_Importaciones_2002_Diciembre.zip",
+      "size": 71097241,
+      "modified": "20241105155039",
+      "rows": 104745,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200301": {
+      "name": "01_Importaciones_2003_Enero.zip",
+      "size": 68852885,
+      "modified": "20241105155050",
+      "rows": 92632,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200302": {
+      "name": "02_Importaciones_2003_Febrero.zip",
+      "size": 75160496,
+      "modified": "20241105155106",
+      "rows": 102250,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200303": {
+      "name": "03_Importaciones_2003_Marzo.zip",
+      "size": 81161115,
+      "modified": "20241105155117",
+      "rows": 110821,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200304": {
+      "name": "04_Importaciones_2003_Abril.zip",
+      "size": 82574060,
+      "modified": "20241105155135",
+      "rows": 115996,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200305": {
+      "name": "05_Importaciones_2003_Mayo.zip",
+      "size": 81465949,
+      "modified": "20241105155147",
+      "rows": 113923,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200306": {
+      "name": "06_Importaciones_2003_Junio.zip",
+      "size": 75350683,
+      "modified": "20241105155213",
+      "rows": 101815,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200307": {
+      "name": "07_Importaciones_2003_Julio.zip",
+      "size": 95574792,
+      "modified": "20241105155224",
+      "rows": 129094,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200308": {
+      "name": "08_Importaciones_2003_Agosto.zip",
+      "size": 81258087,
+      "modified": "20241105155233",
+      "rows": 113407,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200309": {
+      "name": "09_Importaciones_2003_Septiembre.zip",
+      "size": 88045176,
+      "modified": "20241105155250",
+      "rows": 122806,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200310": {
+      "name": "10_Importaciones_2003_Octubre.zip",
+      "size": 96276367,
+      "modified": "20241105155301",
+      "rows": 134342,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200311": {
+      "name": "11_Importaciones_2003_Noviembre.zip",
+      "size": 84730664,
+      "modified": "20241105155317",
+      "rows": 116651,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200312": {
+      "name": "12_Importaciones_2003_Diciembre.zip",
+      "size": 85988087,
+      "modified": "20241105155333",
+      "rows": 118622,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200401": {
+      "name": "01_Importaciones_2004_Enero.zip",
+      "size": 75880909,
+      "modified": "20241105155359",
+      "rows": 103679,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200402": {
+      "name": "02_Importaciones_2004_Febrero.zip",
+      "size": 84710830,
+      "modified": "20241105155412",
+      "rows": 109477,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200403": {
+      "name": "03_Importaciones_2004_Marzo.zip",
+      "size": 103164993,
+      "modified": "20241105155421",
+      "rows": 133629,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200404": {
+      "name": "04_Importaciones_2004_Abril.zip",
+      "size": 96674152,
+      "modified": "20241105155431",
+      "rows": 124494,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200405": {
+      "name": "05_Importaciones_2004_Mayo.zip",
+      "size": 94299202,
+      "modified": "20241105155440",
+      "rows": 121359,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200406": {
+      "name": "06_Importaciones_2004_Junio.zip",
+      "size": 97993624,
+      "modified": "20241105155451",
+      "rows": 124208,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200407": {
+      "name": "07_Importaciones_2004_Julio.zip",
+      "size": 95870452,
+      "modified": "20241105155501",
+      "rows": 124134,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200408": {
+      "name": "08_Importaciones_2004_Agosto.zip",
+      "size": 101440290,
+      "modified": "20241105155518",
+      "rows": 129707,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200409": {
+      "name": "09_Importaciones_2004_Septiembre.zip",
+      "size": 100593015,
+      "modified": "20241105155529",
+      "rows": 128590,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200410": {
+      "name": "10_Importaciones_2004_Octubre.zip",
+      "size": 105178063,
+      "modified": "20241105155538",
+      "rows": 136599,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200411": {
+      "name": "11_Importaciones_2004_Noviembre.zip",
+      "size": 107594766,
+      "modified": "20241105155604",
+      "rows": 143275,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200412": {
+      "name": "12_Importaciones_2004_Diciembre.zip",
+      "size": 109338467,
+      "modified": "20241105155627",
+      "rows": 142465,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200501": {
+      "name": "01_Importaciones_2005_Enero.zip",
+      "size": 86100679,
+      "modified": "20260710153726",
+      "rows": 111979,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200502": {
+      "name": "02_Importaciones_2005_Febrero.zip",
+      "size": 99892006,
+      "modified": "20260710153727",
+      "rows": 128379,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200503": {
+      "name": "03_Importaciones_2005_Marzo.zip",
+      "size": 108642335,
+      "modified": "20260710153727",
+      "rows": 140226,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200504": {
+      "name": "04_Importaciones_2005_Abril.zip",
+      "size": 115929582,
+      "modified": "20260710153727",
+      "rows": 149727,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200505": {
+      "name": "05_Importaciones_2005_Mayo.zip",
+      "size": 107805651,
+      "modified": "20260710153727",
+      "rows": 138771,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200506": {
+      "name": "06_Importaciones_2005_Junio.zip",
+      "size": 116432543,
+      "modified": "20260710153727",
+      "rows": 150324,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200507": {
+      "name": "07_Importaciones_2005_Julio.zip",
+      "size": 106001854,
+      "modified": "20260710153727",
+      "rows": 137161,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200508": {
+      "name": "08_Importaciones_2005_Agosto.zip",
+      "size": 122719663,
+      "modified": "20260710153727",
+      "rows": 158107,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200509": {
+      "name": "09_Importaciones_2005_Septiembre.zip",
+      "size": 117695415,
+      "modified": "20260710153726",
+      "rows": 151445,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200510": {
+      "name": "10_Importaciones_2005_Octubre.zip",
+      "size": 112300237,
+      "modified": "20260710153727",
+      "rows": 144382,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200511": {
+      "name": "11_Importaciones_2005_Noviembre.zip",
+      "size": 120327459,
+      "modified": "20260710153727",
+      "rows": 155105,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200512": {
+      "name": "12_Importaciones_2005_Diciembre.zip",
+      "size": 116567011,
+      "modified": "20260710153727",
+      "rows": 149281,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200601": {
+      "name": "01_Importaciones_2006_Enero.zip",
+      "size": 100002759,
+      "modified": "20260710154321",
+      "rows": 131710,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200602": {
+      "name": "02_Importaciones_2006_Febrero.zip",
+      "size": 106497560,
+      "modified": "20260710154321",
+      "rows": 138222,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200603": {
+      "name": "03_Importaciones_2006_Marzo.zip",
+      "size": 131700732,
+      "modified": "20260710154321",
+      "rows": 169661,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200604": {
+      "name": "04_Importaciones_2006_Abril.zip",
+      "size": 112248935,
+      "modified": "20260710154321",
+      "rows": 145707,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200605": {
+      "name": "05_Importaciones_2006_Mayo.zip",
+      "size": 122888154,
+      "modified": "20260710154321",
+      "rows": 160060,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200606": {
+      "name": "06_Importaciones_2006_Junio.zip",
+      "size": 120650042,
+      "modified": "20260710154321",
+      "rows": 155205,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200607": {
+      "name": "07_Importaciones_2006_Julio.zip",
+      "size": 114551104,
+      "modified": "20260710154321",
+      "rows": 148209,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200608": {
+      "name": "08_Importaciones_2006_Agosto.zip",
+      "size": 131761612,
+      "modified": "20260710154321",
+      "rows": 170559,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200609": {
+      "name": "09_Importaciones_2006_Septiembre.zip",
+      "size": 129251838,
+      "modified": "20260710154321",
+      "rows": 167470,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200610": {
+      "name": "10_Importaciones_2006_Octubre.zip",
+      "size": 136518103,
+      "modified": "20260710154321",
+      "rows": 175819,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200611": {
+      "name": "11_Importaciones_2006_Noviembre.zip",
+      "size": 135643534,
+      "modified": "20260710154321",
+      "rows": 175227,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200612": {
+      "name": "12_Importaciones_2006_Diciembre.zip",
+      "size": 121850095,
+      "modified": "20260710154321",
+      "rows": 157439,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200701": {
+      "name": "01_Importaciones_2007_Enero.zip",
+      "size": 119792249,
+      "modified": "20260710155112",
+      "rows": 154373,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200702": {
+      "name": "02_Importaciones_2007_Febrero.zip",
+      "size": 124584987,
+      "modified": "20260710155112",
+      "rows": 162301,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200703": {
+      "name": "03_Importaciones_2007_Marzo.zip",
+      "size": 138676319,
+      "modified": "20260710155113",
+      "rows": 180945,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200704": {
+      "name": "04_Importaciones_2007_Abril.zip",
+      "size": 126395089,
+      "modified": "20260710155112",
+      "rows": 166462,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200705": {
+      "name": "05_Importaciones_2007_Mayo.zip",
+      "size": 157625402,
+      "modified": "20260710155112",
+      "rows": 187030,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200706": {
+      "name": "06_Importaciones_2007_Junio.zip",
+      "size": 144010123,
+      "modified": "20260710155112",
+      "rows": 169912,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200707": {
+      "name": "07_Importaciones_2007_Julio.zip",
+      "size": 144180769,
+      "modified": "20260710155112",
+      "rows": 171481,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200708": {
+      "name": "08_Importaciones_2007_Agosto.zip",
+      "size": 165574612,
+      "modified": "20260710155112",
+      "rows": 196531,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200709": {
+      "name": "09_Importaciones_2007_Septiembre.zip",
+      "size": 152285362,
+      "modified": "20260710155113",
+      "rows": 178839,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200710": {
+      "name": "10_Importaciones_2007_Octubre.zip",
+      "size": 175262178,
+      "modified": "20260710155113",
+      "rows": 207075,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200711": {
+      "name": "11_Importaciones_2007_Noviembre.zip",
+      "size": 164802260,
+      "modified": "20260710155113",
+      "rows": 193863,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200712": {
+      "name": "12_Importaciones_2007_Diciembre.zip",
+      "size": 144411453,
+      "modified": "20260710155112",
+      "rows": 171605,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200801": {
+      "name": "01_Importaciones_2008_Enero.zip",
+      "size": 139033468,
+      "modified": "20241105161959",
+      "rows": 165402,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200802": {
+      "name": "02_Importaciones_2008_Febrero.zip",
+      "size": 141236634,
+      "modified": "20241105162009",
+      "rows": 167622,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200803": {
+      "name": "03_Importaciones_2008_Marzo.zip",
+      "size": 137343165,
+      "modified": "20241105162017",
+      "rows": 163820,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200804": {
+      "name": "04_Importaciones_2008_Abril.zip",
+      "size": 169264308,
+      "modified": "20241105162027",
+      "rows": 201646,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200805": {
+      "name": "05_Importaciones_2008_Mayo.zip",
+      "size": 141936463,
+      "modified": "20241105162035",
+      "rows": 169066,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200806": {
+      "name": "06_Importaciones_2008_Junio.zip",
+      "size": 140235579,
+      "modified": "20241105162044",
+      "rows": 166250,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200807": {
+      "name": "07_Importaciones_2008_Julio.zip",
+      "size": 162669853,
+      "modified": "20241105162053",
+      "rows": 194129,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200808": {
+      "name": "08_Importaciones_2008_Agosto.zip",
+      "size": 142933185,
+      "modified": "20241105162108",
+      "rows": 170555,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200809": {
+      "name": "09_Importaciones_2008_Septiembre.zip",
+      "size": 155496326,
+      "modified": "20241105162134",
+      "rows": 186037,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200810": {
+      "name": "10_Importaciones_2008_Octubre.zip",
+      "size": 168083284,
+      "modified": "20241105162154",
+      "rows": 199424,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200811": {
+      "name": "11_Importaciones_2008_Noviembre.zip",
+      "size": 141029101,
+      "modified": "20241105162210",
+      "rows": 168336,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200812": {
+      "name": "12_Importaciones_2008_Diciembre.zip",
+      "size": 141001338,
+      "modified": "20241105162223",
+      "rows": 169283,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200901": {
+      "name": "01_Importaciones_2009_Enero.zip",
+      "size": 118488822,
+      "modified": "20250813143520",
+      "rows": 140053,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200902": {
+      "name": "02_Importaciones_2009_Febrero.zip",
+      "size": 124435555,
+      "modified": "20250813143350",
+      "rows": 148380,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200903": {
+      "name": "03_Importaciones_2009_Marzo.zip",
+      "size": 135439707,
+      "modified": "20250813143809",
+      "rows": 160964,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200904": {
+      "name": "04_Importaciones_2009_Abril.zip",
+      "size": 133625321,
+      "modified": "20250813143752",
+      "rows": 159010,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200905": {
+      "name": "05_Importaciones_2009_Mayo.zip",
+      "size": 125279345,
+      "modified": "20250813143744",
+      "rows": 147993,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200906": {
+      "name": "06_Importaciones_2009_Junio.zip",
+      "size": 132689905,
+      "modified": "20250813143816",
+      "rows": 156465,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200907": {
+      "name": "07_Importaciones_2009_Julio.zip",
+      "size": 151680647,
+      "modified": "20250813143852",
+      "rows": 178273,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200908": {
+      "name": "08_Importaciones_2009_Agosto.zip",
+      "size": 136445099,
+      "modified": "20250813143800",
+      "rows": 159910,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200909": {
+      "name": "09_Importaciones_2009_Septiembre.zip",
+      "size": 152118057,
+      "modified": "20250813143837",
+      "rows": 178272,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200910": {
+      "name": "10_Importaciones_2009_Octubre.zip",
+      "size": 160159914,
+      "modified": "20250813143859",
+      "rows": 189585,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200911": {
+      "name": "11_Importaciones_2009_Noviembre.zip",
+      "size": 148075408,
+      "modified": "20250813143326",
+      "rows": 175188,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200912": {
+      "name": "12_Importaciones_2009_Diciembre.zip",
+      "size": 153595631,
+      "modified": "20250813143843",
+      "rows": 181993,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201001": {
+      "name": "01_Importaciones_2010_Enero.zip",
+      "size": 127176438,
+      "modified": "20250813144525",
+      "rows": 150769,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201002": {
+      "name": "02_Importaciones_2010_Febrero.zip",
+      "size": 135696217,
+      "modified": "20250813144532",
+      "rows": 160876,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201003": {
+      "name": "03_Importaciones_2010_Marzo.zip",
+      "size": 175553184,
+      "modified": "20250813144610",
+      "rows": 202224,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201004": {
+      "name": "04_Importaciones_2010_Abril.zip",
+      "size": 162793436,
+      "modified": "20250813144548",
+      "rows": 191205,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201005": {
+      "name": "05_Importaciones_2010_Mayo.zip",
+      "size": 155014610,
+      "modified": "20250121194547",
+      "rows": 184763,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201006": {
+      "name": "06_Importaciones_2010_Junio.zip",
+      "size": 161224915,
+      "modified": "20250813144458",
+      "rows": 192789,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201007": {
+      "name": "07_Importaciones_2010_Julio.zip",
+      "size": 168803127,
+      "modified": "20250813144540",
+      "rows": 197979,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201008": {
+      "name": "08_Importaciones_2010_Agosto.zip",
+      "size": 176369389,
+      "modified": "20250813144518",
+      "rows": 212289,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201009": {
+      "name": "09_Importaciones_2010_Septiembre.zip",
+      "size": 186768510,
+      "modified": "20250813144602",
+      "rows": 223369,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201010": {
+      "name": "10_Importaciones_2010_Octubre.zip",
+      "size": 185090812,
+      "modified": "20250813144512",
+      "rows": 221080,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201011": {
+      "name": "11_Importaciones_2010_Noviembre.zip",
+      "size": 180208237,
+      "modified": "20250813144555",
+      "rows": 217160,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201012": {
+      "name": "12_Importaciones_2010_Diciembre.zip",
+      "size": 175795830,
+      "modified": "20250813144505",
+      "rows": 211430,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201101": {
+      "name": "01_Importaciones_2011_Enero.zip",
+      "size": 153279370,
+      "modified": "20250813145232",
+      "rows": 184466,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201102": {
+      "name": "02_Importaciones_2011_Febrero.zip",
+      "size": 158499504,
+      "modified": "20250813145227",
+      "rows": 189629,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201103": {
+      "name": "03_Importaciones_2011_Marzo.zip",
+      "size": 193112957,
+      "modified": "20250813145238",
+      "rows": 232234,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201104": {
+      "name": "04_Importaciones_2011_Abril.zip",
+      "size": 177678789,
+      "modified": "20250813145326",
+      "rows": 212121,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201105": {
+      "name": "05_Importaciones_2011_Mayo.zip",
+      "size": 196467208,
+      "modified": "20250121195119",
+      "rows": 236568,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201106": {
+      "name": "06_Importaciones_2011_Junio.zip",
+      "size": 182894447,
+      "modified": "20250813145245",
+      "rows": 220491,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201107": {
+      "name": "07_Importaciones_2011_Julio.zip",
+      "size": 184282093,
+      "modified": "20250121195154",
+      "rows": 220857,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201108": {
+      "name": "08_Importaciones_2011_Agosto.zip",
+      "size": 205994390,
+      "modified": "20250813145318",
+      "rows": 247707,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201109": {
+      "name": "09_Importaciones_2011_Septiembre.zip",
+      "size": 207800209,
+      "modified": "20250813145301",
+      "rows": 246529,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201110": {
+      "name": "10_Importaciones_2011_Octubre.zip",
+      "size": 194120741,
+      "modified": "20250813145308",
+      "rows": 232827,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201111": {
+      "name": "11_Importaciones_2011_Noviembre.zip",
+      "size": 207568238,
+      "modified": "20250121195335",
+      "rows": 250888,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201112": {
+      "name": "12_Importaciones_2011_Diciembre.zip",
+      "size": 189297912,
+      "modified": "20250813145253",
+      "rows": 226321,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201201": {
+      "name": "01_Importaciones_2012_Enero.zip",
+      "size": 170195789,
+      "modified": "20241227211722",
+      "rows": 206256,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201202": {
+      "name": "02_Importaciones_2012_Febrero.zip",
+      "size": 186885714,
+      "modified": "20250813145738",
+      "rows": 227064,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201203": {
+      "name": "03_Importaciones_2012_Marzo.zip",
+      "size": 202711551,
+      "modified": "20241227212201",
+      "rows": 248425,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201204": {
+      "name": "04_Importaciones_2012_Abril.zip",
+      "size": 182764340,
+      "modified": "20241227212038",
+      "rows": 224785,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201205": {
+      "name": "05_Importaciones_2012_Mayo.zip",
+      "size": 207536538,
+      "modified": "20241227212415",
+      "rows": 255074,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201206": {
+      "name": "06_Importaciones_2012_Junio.zip",
+      "size": 195816014,
+      "modified": "20241227212106",
+      "rows": 241931,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201207": {
+      "name": "07_Importaciones_2012_Julio.zip",
+      "size": 200963619,
+      "modified": "20241227212333",
+      "rows": 247633,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201208": {
+      "name": "08_Importaciones_2012_Agosto.zip",
+      "size": 211463918,
+      "modified": "20241227212440",
+      "rows": 259711,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201209": {
+      "name": "09_Importaciones_2012_Septiembre.zip",
+      "size": 202039368,
+      "modified": "20241227212234",
+      "rows": 248666,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201210": {
+      "name": "10_Importaciones_2012_Octubre.zip",
+      "size": 234744148,
+      "modified": "20241227212045",
+      "rows": 283704,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201211": {
+      "name": "11_Importaciones_2012_Noviembre.zip",
+      "size": 217269996,
+      "modified": "20250813145752",
+      "rows": 259312,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201212": {
+      "name": "12_Importaciones_2012_Diciembre.zip",
+      "size": 209278988,
+      "modified": "20250813145745",
+      "rows": 250963,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201301": {
+      "name": "01_Importaciones_2013_Enero.zip",
+      "size": 193864633,
+      "modified": "20250813150459",
+      "rows": 232840,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201302": {
+      "name": "02_Importaciones_2013_Febrero.zip",
+      "size": 193905371,
+      "modified": "20250813150515",
+      "rows": 234025,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201303": {
+      "name": "03_Importaciones_2013_Marzo.zip",
+      "size": 180940266,
+      "modified": "20241227211336",
+      "rows": 226060,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201304": {
+      "name": "04_Importaciones_2013_Abril.zip",
+      "size": 224147048,
+      "modified": "20250813150453",
+      "rows": 269633,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201305": {
+      "name": "05_Importaciones_2013_Mayo.zip",
+      "size": 215935494,
+      "modified": "20250813150540",
+      "rows": 259579,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201306": {
+      "name": "06_Importaciones_2013_Junio.zip",
+      "size": 194537048,
+      "modified": "20250813150506",
+      "rows": 233105,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201307": {
+      "name": "07_Importaciones_2013_Julio.zip",
+      "size": 225306107,
+      "modified": "20250813150546",
+      "rows": 268971,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201308": {
+      "name": "08_Importaciones_2013_Agosto.zip",
+      "size": 223297834,
+      "modified": "20250813150522",
+      "rows": 267864,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201309": {
+      "name": "09_Importaciones_2013_Septiembre.zip",
+      "size": 221179684,
+      "modified": "20250813150529",
+      "rows": 266830,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201310": {
+      "name": "10_Importaciones_2013_Octubre.zip",
+      "size": 239996144,
+      "modified": "20250813150559",
+      "rows": 288640,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201311": {
+      "name": "11_Importaciones_2013_Noviembre.zip",
+      "size": 219358232,
+      "modified": "20241227211418",
+      "rows": 273359,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201312": {
+      "name": "12_Importaciones_2013_Diciembre.zip",
+      "size": 203767351,
+      "modified": "20241227211433",
+      "rows": 252750,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201401": {
+      "name": "01_Importaciones_2014_Enero.zip",
+      "size": 192196767,
+      "modified": "20250813151233",
+      "rows": 235876,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201402": {
+      "name": "02_Importaciones_2014_Febrero.zip",
+      "size": 197812324,
+      "modified": "20250813151239",
+      "rows": 237104,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201403": {
+      "name": "03_Importaciones_2014_Marzo.zip",
+      "size": 200761934,
+      "modified": "20241223163533",
+      "rows": 249795,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201404": {
+      "name": "04_Importaciones_2014_Abril.zip",
+      "size": 216866818,
+      "modified": "20241223163533",
+      "rows": 270220,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201405": {
+      "name": "05_Importaciones_2014_Mayo.zip",
+      "size": 224339112,
+      "modified": "20250813151310",
+      "rows": 274385,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201406": {
+      "name": "06_Importaciones_2014_Junio.zip",
+      "size": 193444635,
+      "modified": "20250813151247",
+      "rows": 232342,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201407": {
+      "name": "07_Importaciones_2014_Julio.zip",
+      "size": 244685022,
+      "modified": "20250813151303",
+      "rows": 303598,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201408": {
+      "name": "08_Importaciones_2014_Agosto.zip",
+      "size": 213033027,
+      "modified": "20250813151256",
+      "rows": 262932,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201409": {
+      "name": "09_Importaciones_2014_Septiembre.zip",
+      "size": 229829159,
+      "modified": "20241223163533",
+      "rows": 286045,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201410": {
+      "name": "10_Importaciones_2014_Octubre.zip",
+      "size": 240222634,
+      "modified": "20241223163533",
+      "rows": 297934,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201411": {
+      "name": "11_Importaciones_2014_Noviembre.zip",
+      "size": 220474031,
+      "modified": "20250813151227",
+      "rows": 274619,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201412": {
+      "name": "12_Importaciones_2014_Diciembre.zip",
+      "size": 221103355,
+      "modified": "20241223163533",
+      "rows": 275230,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201501": {
+      "name": "01_Importaciones_2015_Enero.zip",
+      "size": 171873978,
+      "modified": "20241223164313",
+      "rows": 214013,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201502": {
+      "name": "02_Importaciones_2015_Febrero.zip",
+      "size": 211492176,
+      "modified": "20250813151842",
+      "rows": 263873,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201503": {
+      "name": "03_Importaciones_2015_Marzo.zip",
+      "size": 205944096,
+      "modified": "20250813151833",
+      "rows": 256899,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201504": {
+      "name": "04_Importaciones_2015_Abril.zip",
+      "size": 203768814,
+      "modified": "20241223164314",
+      "rows": 254036,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201505": {
+      "name": "05_Importaciones_2015_Mayo.zip",
+      "size": 200167894,
+      "modified": "20241223164314",
+      "rows": 248421,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201506": {
+      "name": "06_Importaciones_2015_Junio.zip",
+      "size": 194911668,
+      "modified": "20241223164314",
+      "rows": 240575,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201507": {
+      "name": "07_Importaciones_2015_Julio.zip",
+      "size": 222664282,
+      "modified": "20250813151809",
+      "rows": 276031,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201508": {
+      "name": "08_Importaciones_2015_Agosto.zip",
+      "size": 207871351,
+      "modified": "20241223164314",
+      "rows": 258552,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201509": {
+      "name": "09_Importaciones_2015_Septiembre.zip",
+      "size": 213662738,
+      "modified": "20250813151803",
+      "rows": 265871,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201510": {
+      "name": "10_Importaciones_2015_Octubre.zip",
+      "size": 212764456,
+      "modified": "20241223164314",
+      "rows": 264973,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201511": {
+      "name": "11_Importaciones_2015_Noviembre.zip",
+      "size": 204509816,
+      "modified": "20241223164314",
+      "rows": 253838,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201512": {
+      "name": "12_Importaciones_2015_Diciembre.zip",
+      "size": 196401092,
+      "modified": "20241223164314",
+      "rows": 242966,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201601": {
+      "name": "01_Importaciones_2016_Enero.zip",
+      "size": 165472529,
+      "modified": "20241218193957",
+      "rows": 205539,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201602": {
+      "name": "02_Importaciones_2016_Febrero.zip",
+      "size": 187010482,
+      "modified": "20241218193957",
+      "rows": 233307,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201603": {
+      "name": "03_Importaciones_2016_Marzo.zip",
+      "size": 185662345,
+      "modified": "20241218193957",
+      "rows": 230973,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201604": {
+      "name": "04_Importaciones_2016_Abril.zip",
+      "size": 195592768,
+      "modified": "20241218193957",
+      "rows": 243039,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201605": {
+      "name": "05_Importaciones_2016_Mayo.zip",
+      "size": 184118393,
+      "modified": "20241218193957",
+      "rows": 227907,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201606": {
+      "name": "06_Importaciones_2016_Junio.zip",
+      "size": 198011800,
+      "modified": "20241218193950",
+      "rows": 245087,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201607": {
+      "name": "07_Importaciones_2016_Julio.zip",
+      "size": 186137580,
+      "modified": "20241218193950",
+      "rows": 231857,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201608": {
+      "name": "08_Importaciones_2016_Agosto.zip",
+      "size": 226323781,
+      "modified": "20241218193950",
+      "rows": 282846,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201609": {
+      "name": "09_Importaciones_2016_Septiembre.zip",
+      "size": 215000290,
+      "modified": "20241218193950",
+      "rows": 267514,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201610": {
+      "name": "10_Importaciones_2016_Octubre.zip",
+      "size": 209311398,
+      "modified": "20241218193950",
+      "rows": 260141,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201611": {
+      "name": "11_Importaciones_2016_Noviembre.zip",
+      "size": 224224905,
+      "modified": "20241218193950",
+      "rows": 279521,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201612": {
+      "name": "12_Importaciones_2016_Diciembre.zip",
+      "size": 213860426,
+      "modified": "20241218193950",
+      "rows": 265148,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201701": {
+      "name": "01_Importaciones_2017_Enero.zip",
+      "size": 190575138,
+      "modified": "20241218193951",
+      "rows": 237703,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201702": {
+      "name": "02_Importaciones_2017_Febrero.zip",
+      "size": 195356984,
+      "modified": "20241218193950",
+      "rows": 241050,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201703": {
+      "name": "03_Importaciones_2017_Marzo.zip",
+      "size": 221158468,
+      "modified": "20241218193951",
+      "rows": 274111,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201704": {
+      "name": "04_Importaciones_2017_Abril.zip",
+      "size": 195346750,
+      "modified": "20250813152240",
+      "rows": 240000,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201705": {
+      "name": "05_Importaciones_2017_Mayo.zip",
+      "size": 209533294,
+      "modified": "20241218193951",
+      "rows": 259595,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201706": {
+      "name": "06_Importaciones_2017_Junio.zip",
+      "size": 215888526,
+      "modified": "20241218193950",
+      "rows": 266307,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201707": {
+      "name": "07_Importaciones_2017_Julio.zip",
+      "size": 219255474,
+      "modified": "20241218193950",
+      "rows": 274679,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201708": {
+      "name": "08_Importaciones_2017_Agosto.zip",
+      "size": 237129574,
+      "modified": "20241218193950",
+      "rows": 297002,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201709": {
+      "name": "09_Importaciones_2017_Septiembre.zip",
+      "size": 207619895,
+      "modified": "20241218193950",
+      "rows": 258881,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201710": {
+      "name": "10_Importaciones_2017_Octubre.zip",
+      "size": 230869266,
+      "modified": "20241218193950",
+      "rows": 285139,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201711": {
+      "name": "11_Importaciones_2017_Noviembre.zip",
+      "size": 235651545,
+      "modified": "20241218193951",
+      "rows": 291837,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201712": {
+      "name": "12_Importaciones_2017_Diciembre.zip",
+      "size": 206019367,
+      "modified": "20250813152233",
+      "rows": 254348,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201801": {
+      "name": "01_Importaciones_2018_Enero.zip",
+      "size": 209400774,
+      "modified": "20241213151226",
+      "rows": 262340,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201802": {
+      "name": "02_Importaciones_2018_Febrero.zip",
+      "size": 202643651,
+      "modified": "20241213151226",
+      "rows": 251384,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201803": {
+      "name": "03_Importaciones_2018_Marzo.zip",
+      "size": 205493094,
+      "modified": "20241213151226",
+      "rows": 255297,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201804": {
+      "name": "04_Importaciones_2018_Abril.zip",
+      "size": 229133159,
+      "modified": "20241213151226",
+      "rows": 284845,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201805": {
+      "name": "05_Importaciones_2018_Mayo.zip",
+      "size": 223924821,
+      "modified": "20250813152556",
+      "rows": 278142,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201806": {
+      "name": "06_Importaciones_2018_Junio.zip",
+      "size": 208273412,
+      "modified": "20241213151222",
+      "rows": 256380,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201807": {
+      "name": "07_Importaciones_2018_Julio.zip",
+      "size": 233852377,
+      "modified": "20250813152542",
+      "rows": 291750,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201808": {
+      "name": "08_Importaciones_2018_Agosto.zip",
+      "size": 256913745,
+      "modified": "20241213151222",
+      "rows": 321809,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201809": {
+      "name": "09_Importaciones_2018_Septiembre.zip",
+      "size": 218871408,
+      "modified": "20241213151222",
+      "rows": 272925,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201810": {
+      "name": "10_Importaciones_2018_Octubre.zip",
+      "size": 262390374,
+      "modified": "20241213151222",
+      "rows": 328014,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201811": {
+      "name": "11_Importaciones_2018_Noviembre.zip",
+      "size": 248662287,
+      "modified": "20241213151222",
+      "rows": 310503,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201812": {
+      "name": "12_Importaciones_2018_Diciembre.zip",
+      "size": 223076569,
+      "modified": "20250813152549",
+      "rows": 276521,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201901": {
+      "name": "01_Importaciones_2019_Enero.zip",
+      "size": 224507241,
+      "modified": "20241213151221",
+      "rows": 279484,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201902": {
+      "name": "02_Importaciones_2019_Febrero.zip",
+      "size": 215371217,
+      "modified": "20250813152909",
+      "rows": 267058,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201903": {
+      "name": "03_Importaciones_2019_Marzo.zip",
+      "size": 224779931,
+      "modified": "20241213151221",
+      "rows": 280448,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201904": {
+      "name": "04_Importaciones_2019_Abril.zip",
+      "size": 232125183,
+      "modified": "20241213151221",
+      "rows": 290379,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201905": {
+      "name": "05_Importaciones_2019_Mayo.zip",
+      "size": 241891988,
+      "modified": "20250813152925",
+      "rows": 301524,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201906": {
+      "name": "06_Importaciones_2019_Junio.zip",
+      "size": 214420301,
+      "modified": "20241213151221",
+      "rows": 266355,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201907": {
+      "name": "07_Importaciones_2019_Julio.zip",
+      "size": 257148173,
+      "modified": "20241213151221",
+      "rows": 322233,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201908": {
+      "name": "08_Importaciones_2019_Agosto.zip",
+      "size": 255939486,
+      "modified": "20241213151221",
+      "rows": 318754,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201909": {
+      "name": "09_Importaciones_2019_Septiembre.zip",
+      "size": 243029132,
+      "modified": "20241213151221",
+      "rows": 304303,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201910": {
+      "name": "10_Importaciones_2019_Octubre.zip",
+      "size": 264250089,
+      "modified": "20241213151221",
+      "rows": 328736,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201911": {
+      "name": "11_Importaciones_2019_Noviembre.zip",
+      "size": 249906331,
+      "modified": "20250121200041",
+      "rows": 312221,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201912": {
+      "name": "12_Importaciones_2019_Diciembre.zip",
+      "size": 248383062,
+      "modified": "20241213151221",
+      "rows": 306884,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202001": {
+      "name": "01_Importaciones_2020_Enero.zip",
+      "size": 235636754,
+      "modified": "20241202134454",
+      "rows": 298341,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202002": {
+      "name": "02_Importaciones_2020_Febrero.zip",
+      "size": 229677136,
+      "modified": "20241202134454",
+      "rows": 290445,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202003": {
+      "name": "03_Importaciones_2020_Marzo.zip",
+      "size": 201223918,
+      "modified": "20241202134454",
+      "rows": 258849,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202004": {
+      "name": "04_Importaciones_2020_Abril.zip",
+      "size": 141842246,
+      "modified": "20241202134436",
+      "rows": 177359,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202005": {
+      "name": "05_Importaciones_2020_Mayo.zip",
+      "size": 139062453,
+      "modified": "20241202134435",
+      "rows": 174234,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202006": {
+      "name": "06_Importaciones_2020_Junio.zip",
+      "size": 145496311,
+      "modified": "20241202134435",
+      "rows": 182338,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202007": {
+      "name": "07_Importaciones_2020_Julio.zip",
+      "size": 186158882,
+      "modified": "20241202134436",
+      "rows": 236026,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202008": {
+      "name": "08_Importaciones_2020_Agosto.zip",
+      "size": 180753472,
+      "modified": "20241202134435",
+      "rows": 226799,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202009": {
+      "name": "09_Importaciones_2020_Septiembre.zip",
+      "size": 200834227,
+      "modified": "20241202134436",
+      "rows": 253572,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202010": {
+      "name": "10_Importaciones_2020_Octubre.zip",
+      "size": 221897135,
+      "modified": "20241202134436",
+      "rows": 282222,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202011": {
+      "name": "11_Importaciones_2020_Noviembre.zip",
+      "size": 216175892,
+      "modified": "20241202134436",
+      "rows": 273154,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202012": {
+      "name": "12_Importaciones_2020_Diciembre.zip",
+      "size": 225761340,
+      "modified": "20241202134436",
+      "rows": 283929,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202101": {
+      "name": "01_Importaciones_2021_Enero.zip",
+      "size": 199158894,
+      "modified": "20241202134437",
+      "rows": 247686,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202102": {
+      "name": "02_Importaciones_2021_Febrero.zip",
+      "size": 208794874,
+      "modified": "20250813153328",
+      "rows": 259210,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202103": {
+      "name": "03_Importaciones_2021_Marzo.zip",
+      "size": 246326786,
+      "modified": "20241202134438",
+      "rows": 307189,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202104": {
+      "name": "04_Importaciones_2021_Abril.zip",
+      "size": 221659841,
+      "modified": "20241202134438",
+      "rows": 276357,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202105": {
+      "name": "05_Importaciones_2021_Mayo.zip",
+      "size": 183685950,
+      "modified": "20241202134437",
+      "rows": 226146,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202106": {
+      "name": "06_Importaciones_2021_Junio.zip",
+      "size": 215101409,
+      "modified": "20241202134437",
+      "rows": 269641,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202107": {
+      "name": "07_Importaciones_2021_Julio.zip",
+      "size": 224254473,
+      "modified": "20241202134437",
+      "rows": 278629,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202108": {
+      "name": "08_Importaciones_2021_Agosto.zip",
+      "size": 222139811,
+      "modified": "20241202134437",
+      "rows": 274614,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202109": {
+      "name": "09_Importaciones_2021_Septiembre.zip",
+      "size": 249302211,
+      "modified": "20241202134437",
+      "rows": 312012,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202110": {
+      "name": "10_Importaciones_2021_Octubre.zip",
+      "size": 243375907,
+      "modified": "20241202134438",
+      "rows": 301868,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202111": {
+      "name": "11_Importaciones_2021_Noviembre.zip",
+      "size": 251314902,
+      "modified": "20241202134438",
+      "rows": 312180,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202112": {
+      "name": "12_Importaciones_2021_Diciembre.zip",
+      "size": 239021408,
+      "modified": "20241202134438",
+      "rows": 294916,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202201": {
+      "name": "01_Importaciones_2022_Enero.zip",
+      "size": 226684762,
+      "modified": "20241202131738",
+      "rows": 275421,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202202": {
+      "name": "02_Importaciones_2022_Febrero.zip",
+      "size": 234195104,
+      "modified": "20241202131738",
+      "rows": 283138,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202203": {
+      "name": "03_Importaciones_2022_Marzo.zip",
+      "size": 261562162,
+      "modified": "20241202131738",
+      "rows": 320155,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202204": {
+      "name": "04_Importaciones_2022_Abril.zip",
+      "size": 227440326,
+      "modified": "20241202131738",
+      "rows": 277100,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202205": {
+      "name": "05_Importaciones_2022_Mayo.zip",
+      "size": 245002849,
+      "modified": "20241202131738",
+      "rows": 298986,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202206": {
+      "name": "06_Importaciones_2022_Junio.zip",
+      "size": 241982485,
+      "modified": "20241202131738",
+      "rows": 299481,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202207": {
+      "name": "07_Importaciones_2022_julio.zip",
+      "size": 245887104,
+      "modified": "20241202131738",
+      "rows": 301681,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202208": {
+      "name": "08_Importaciones_2022_Agosto.zip",
+      "size": 272822579,
+      "modified": "20241202131739",
+      "rows": 335012,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202209": {
+      "name": "09_Importaciones_2022_Septiembre.zip",
+      "size": 266161186,
+      "modified": "20241202131739",
+      "rows": 331191,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202210": {
+      "name": "10_Importaciones_2022_Octubre.zip",
+      "size": 250040510,
+      "modified": "20241202131739",
+      "rows": 307966,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202211": {
+      "name": "11_Importaciones_2022_Noviembre.zip",
+      "size": 255506984,
+      "modified": "20241202131739",
+      "rows": 314313,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202212": {
+      "name": "12_Importaciones_2022_Diciembre.zip",
+      "size": 249461632,
+      "modified": "20241202131739",
+      "rows": 306716,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202301": {
+      "name": "01_Importaciones_2023_Enero.zip",
+      "size": 219670509,
+      "modified": "20241105184107",
+      "rows": 273092,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202302": {
+      "name": "02_Importaciones_2023_Febrero.zip",
+      "size": 217452179,
+      "modified": "20241105184108",
+      "rows": 266081,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202303": {
+      "name": "03_Importaciones_2023_Marzo.zip",
+      "size": 239036696,
+      "modified": "20241105184108",
+      "rows": 294790,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202304": {
+      "name": "04_Importaciones_2023_Abril.zip",
+      "size": 211209004,
+      "modified": "20241105184108",
+      "rows": 261128,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202305": {
+      "name": "05_Importaciones_2023_Mayo.zip",
+      "size": 235429056,
+      "modified": "20241105184108",
+      "rows": 290436,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202306": {
+      "name": "06_Importaciones_2023_Junio.zip",
+      "size": 230702231,
+      "modified": "20241105184108",
+      "rows": 284161,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202307": {
+      "name": "07_Importaciones_2023_Julio.zip",
+      "size": 225528005,
+      "modified": "20241105184108",
+      "rows": 278629,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202308": {
+      "name": "08_Importaciones_2023_Agosto.zip",
+      "size": 252740144,
+      "modified": "20241105184108",
+      "rows": 310715,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202309": {
+      "name": "09_Importaciones_2023_Septiembre.zip",
+      "size": 242109590,
+      "modified": "20241105184108",
+      "rows": 296972,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202310": {
+      "name": "10_Importaciones_2023_Octubre.zip",
+      "size": 242998439,
+      "modified": "20241105184108",
+      "rows": 299757,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202311": {
+      "name": "11_Importaciones_2023_Noviembre.zip",
+      "size": 237328240,
+      "modified": "20241105184108",
+      "rows": 288418,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202312": {
+      "name": "12_Importaciones_2023_Diciembre.zip",
+      "size": 230586784,
+      "modified": "20241105184108",
+      "rows": 284021,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202401": {
+      "name": "01_Importaciones_2024_Enero.zip",
+      "size": 242180960,
+      "modified": "20250813153744",
+      "rows": 294419,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202402": {
+      "name": "02_Importaciones_2024_Febrero.zip",
+      "size": 238484108,
+      "modified": "20241223164537",
+      "rows": 289649,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202403": {
+      "name": "03_Importaciones_2024_Marzo.zip",
+      "size": 207529359,
+      "modified": "20241223164608",
+      "rows": 258209,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202404": {
+      "name": "04_Importaciones_2024_Abril.zip",
+      "size": 253055926,
+      "modified": "20241223164649",
+      "rows": 314516,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202405": {
+      "name": "05_Importaciones_2024_Mayo.zip",
+      "size": 243722570,
+      "modified": "20241223164713",
+      "rows": 298049,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202406": {
+      "name": "06_Importaciones_2024_Junio.zip",
+      "size": 223389124,
+      "modified": "20241223164735",
+      "rows": 273417,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202407": {
+      "name": "07_Importaciones_2024_Julio.zip",
+      "size": 258570130,
+      "modified": "20241223164804",
+      "rows": 314403,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202408": {
+      "name": "08_Importaciones_2024_Agosto.zip",
+      "size": 268637825,
+      "modified": "20251126213404",
+      "rows": 321615,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202409": {
+      "name": "09_Importaciones_2024_Septiembre.zip",
+      "size": 254050841,
+      "modified": "20250813153752",
+      "rows": 309866,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202410": {
+      "name": "10_Importaciones_2024_Octubre.zip",
+      "size": 268677099,
+      "modified": "20250813153720",
+      "rows": 328778,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202411": {
+      "name": "11_Importaciones_2024_Noviembre.zip",
+      "size": 264037223,
+      "modified": "20250813153733",
+      "rows": 321450,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202412": {
+      "name": "12_Importaciones_2024_Diciembre.zip",
+      "size": 236471373,
+      "modified": "20250813153728",
+      "rows": 289172,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202501": {
+      "name": "01_Importaciones_2025_Enero.zip",
+      "size": 250117239,
+      "modified": "20250319155038",
+      "rows": 306607,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202502": {
+      "name": "02_Importaciones_2025_Febrero.zip",
+      "size": 244791129,
+      "modified": "20250423154217",
+      "rows": 299962,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202503": {
+      "name": "03_Importaciones_2025_Marzo.zip",
+      "size": 250077863,
+      "modified": "20250519154338",
+      "rows": 304092,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202504": {
+      "name": "04_Importaciones_2025_Abril.zip",
+      "size": 248629423,
+      "modified": "20250620152906",
+      "rows": 304768,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202505": {
+      "name": "05_Importaciones_2025_Mayo.zip",
+      "size": 272210549,
+      "modified": "20250721154406",
+      "rows": 331784,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202506": {
+      "name": "06_Importaciones_2025_Junio.zip",
+      "size": 243319585,
+      "modified": "20250819153350",
+      "rows": 294440,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202507": {
+      "name": "07_Importaciones_2025_Julio.zip",
+      "size": 303634382,
+      "modified": "20250922154916",
+      "rows": 367753,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202508": {
+      "name": "08_Importaciones_2025_Agosto.zip",
+      "size": 269387157,
+      "modified": "20251021145313",
+      "rows": 328056,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202509": {
+      "name": "09_Importaciones_2025_Septiembre.zip",
+      "size": 285653743,
+      "modified": "20251119152755",
+      "rows": 349248,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202510": {
+      "name": "10_Importaciones_2025_Octubre.zip",
+      "size": 295912189,
+      "modified": "20251230150058",
+      "rows": 359814,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202511": {
+      "name": "11_Importaciones_2025_Noviembre.zip",
+      "size": 264327254,
+      "modified": "20260122150959",
+      "rows": 322708,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202512": {
+      "name": "12_Importaciones_2025_Diciembre.zip",
+      "size": 267678590,
+      "modified": "20260217150606",
+      "rows": 325193,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202601": {
+      "name": "01_Importaciones_2026_Enero.zip",
+      "size": 270724363,
+      "modified": "20260319144432",
+      "rows": 332583,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202602": {
+      "name": "02_Importaciones_2026_Febrero.zip",
+      "size": 253203794,
+      "modified": "20260421145433",
+      "rows": 310085,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202603": {
+      "name": "03_Importaciones_2026_Marzo.zip",
+      "size": 271374077,
+      "modified": "20260519145333",
+      "rows": 332304,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202604": {
+      "name": "04_Importaciones_2026_Abril.zip",
+      "size": 277146706,
+      "modified": "20260622150241",
+      "rows": 339473,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202605": {
+      "name": "05_Importaciones_2026_Mayo.zip",
+      "size": 261720631,
+      "modified": "20260721140442",
+      "rows": 321697,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202606": {
+      "name": "06_Importaciones_2026_Junio.zip",
+      "size": 258136107,
+      "modified": "20260819150313",
+      "rows": 316660,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202607": {
+      "name": "07_Importaciones_2026_Julio.zip",
+      "size": 296255004,
+      "modified": "20260921150342",
+      "rows": 359819,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202608": {
+      "name": "08_Importaciones_2026_Agosto.zip",
+      "size": 274994735,
+      "modified": "20261021145752",
+      "rows": 335100,
+      "processed_at": "2026-11-04",
+      "previous": []
+    }
+  },
+  "exportaciones": {
+    "200101": {
+      "name": "01_Exportaciones_2001_Enero.zip",
+      "size": 6882153,
+      "modified": "20241105185222",
+      "rows": 31032,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200102": {
+      "name": "02_Exportaciones_2001_Febrero.zip",
+      "size": 5789463,
+      "modified": "20241105185222",
+      "rows": 30969,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200103": {
+      "name": "03_Exportaciones_2001_Marzo.zip",
+      "size": 6899168,
+      "modified": "20241105185222",
+      "rows": 36914,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200104": {
+      "name": "04_Exportaciones_2001_Abril.zip",
+      "size": 6641264,
+      "modified": "20241105185223",
+      "rows": 35661,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200105": {
+      "name": "05_Exportaciones_2001_Mayo.zip",
+      "size": 7463802,
+      "modified": "20241105185222",
+      "rows": 40274,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200106": {
+      "name": "06_Exportaciones_2001_Junio.zip",
+      "size": 6952909,
+      "modified": "20241105185222",
+      "rows": 37113,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200107": {
+      "name": "07_Exportaciones_2001_Julio.zip",
+      "size": 8891308,
+      "modified": "20241105185222",
+      "rows": 40806,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200108": {
+      "name": "08_Exportaciones_2001_Agosto.zip",
+      "size": 7904789,
+      "modified": "20241105185222",
+      "rows": 43021,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200109": {
+      "name": "09_Exportaciones_2001_Septiembre.zip",
+      "size": 6758772,
+      "modified": "20241105185222",
+      "rows": 36243,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200110": {
+      "name": "10_Exportaciones_2001_Octubre.zip",
+      "size": 7639072,
+      "modified": "20241105185222",
+      "rows": 41925,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200111": {
+      "name": "11_Exportaciones_2001_Noviembre.zip",
+      "size": 8471270,
+      "modified": "20241105185222",
+      "rows": 46377,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200112": {
+      "name": "12_Exportaciones_2001_Diciembre.zip",
+      "size": 7412520,
+      "modified": "20241105185222",
+      "rows": 40517,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200201": {
+      "name": "01_Exportaciones_2002_Enero.zip",
+      "size": 6780548,
+      "modified": "20241105185223",
+      "rows": 33850,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200202": {
+      "name": "02_Exportaciones_2002_Febrero.zip",
+      "size": 6746226,
+      "modified": "20241105185236",
+      "rows": 33588,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200203": {
+      "name": "03_Exportaciones_2002_Marzo.zip",
+      "size": 5883531,
+      "modified": "20241105185236",
+      "rows": 29204,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200204": {
+      "name": "04_Exportaciones_2002_Abril.zip",
+      "size": 8874213,
+      "modified": "20241105185223",
+      "rows": 44326,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200205": {
+      "name": "05_Exportaciones_2002_Mayo.zip",
+      "size": 8487563,
+      "modified": "20241105185234",
+      "rows": 42290,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200206": {
+      "name": "06_Exportaciones_2002_Junio.zip",
+      "size": 7027126,
+      "modified": "20241105185236",
+      "rows": 35016,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200207": {
+      "name": "07_Exportaciones_2002_Julio.zip",
+      "size": 8326082,
+      "modified": "20241105185236",
+      "rows": 41407,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200208": {
+      "name": "08_Exportaciones_2002_Agosto.zip",
+      "size": 6842376,
+      "modified": "20241105185217",
+      "rows": 34089,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200209": {
+      "name": "09_Exportaciones_2002_Septiembre.zip",
+      "size": 7480666,
+      "modified": "20241105185223",
+      "rows": 37125,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200210": {
+      "name": "10_Exportaciones_2002_Octubre.zip",
+      "size": 8185452,
+      "modified": "20241105185236",
+      "rows": 40534,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200211": {
+      "name": "11_Exportaciones_2002_Noviembre.zip",
+      "size": 8120610,
+      "modified": "20241105185223",
+      "rows": 40657,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200212": {
+      "name": "12_Exportaciones_2002_Diciembre.zip",
+      "size": 7615917,
+      "modified": "20241105185536",
+      "rows": 37988,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200301": {
+      "name": "01_Exportaciones_2003_Enero.zip",
+      "size": 7270479,
+      "modified": "20241105185255",
+      "rows": 34726,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200302": {
+      "name": "02_Exportaciones_2003_Febrero.zip",
+      "size": 8996639,
+      "modified": "20241105185256",
+      "rows": 50455,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200303": {
+      "name": "03_Exportaciones_2003_Marzo.zip",
+      "size": 8978142,
+      "modified": "20241105185256",
+      "rows": 50653,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200304": {
+      "name": "04_Exportaciones_2003_Abril.zip",
+      "size": 8912819,
+      "modified": "20241105185256",
+      "rows": 48930,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200305": {
+      "name": "05_Exportaciones_2003_Mayo.zip",
+      "size": 8827525,
+      "modified": "20241105185256",
+      "rows": 48641,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200306": {
+      "name": "06_Exportaciones_2003_Junio.zip",
+      "size": 7883786,
+      "modified": "20241105185256",
+      "rows": 43372,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200307": {
+      "name": "07_Exportaciones_2003_Julio.zip",
+      "size": 10149458,
+      "modified": "20241105185256",
+      "rows": 56089,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200308": {
+      "name": "08_Exportaciones_2003_Agosto.zip",
+      "size": 8870936,
+      "modified": "20241105185256",
+      "rows": 48577,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200309": {
+      "name": "09_Exportaciones_2003_Septiembre.zip",
+      "size": 9412857,
+      "modified": "20241105185256",
+      "rows": 51610,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200310": {
+      "name": "10_Exportaciones_2003_Octubre.zip",
+      "size": 8373079,
+      "modified": "20241105185255",
+      "rows": 45603,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200311": {
+      "name": "11_Exportaciones_2003_Noviembre.zip",
+      "size": 8173796,
+      "modified": "20241105185256",
+      "rows": 44881,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200312": {
+      "name": "12_Exportaciones_2003_Diciembre.zip",
+      "size": 9247527,
+      "modified": "20241105185256",
+      "rows": 50858,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200401": {
+      "name": "01_Exportaciones_2004_Enero.zip",
+      "size": 7635019,
+      "modified": "20250826142101",
+      "rows": 34422,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200402": {
+      "name": "02_Exportaciones_2004_Febrero.zip",
+      "size": 9142935,
+      "modified": "20250826142102",
+      "rows": 40999,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200403": {
+      "name": "03_Exportaciones_2004_Marzo.zip",
+      "size": 11055730,
+      "modified": "20250826142103",
+      "rows": 49643,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200404": {
+      "name": "04_Exportaciones_2004_Abril.zip",
+      "size": 10960699,
+      "modified": "20250826142104",
+      "rows": 49593,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200405": {
+      "name": "05_Exportaciones_2004_Mayo.zip",
+      "size": 10915313,
+      "modified": "20250826142105",
+      "rows": 49209,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200406": {
+      "name": "06_Exportaciones_2004_Junio.zip",
+      "size": 11852140,
+      "modified": "20250826142104",
+      "rows": 53683,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200407": {
+      "name": "07_Exportaciones_2004_Julio.zip",
+      "size": 13511643,
+      "modified": "20250826142103",
+      "rows": 61046,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200408": {
+      "name": "08_Exportaciones_2004_Agosto.zip",
+      "size": 13064010,
+      "modified": "20250826142103",
+      "rows": 59201,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200409": {
+      "name": "09_Exportaciones_2004_Septiembre.zip",
+      "size": 11725894,
+      "modified": "20250826142102",
+      "rows": 53286,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200410": {
+      "name": "10_Exportaciones_2004_Octubre.zip",
+      "size": 12081517,
+      "modified": "20250826142105",
+      "rows": 55153,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200411": {
+      "name": "11_Exportaciones_2004_Noviembre.zip",
+      "size": 13870589,
+      "modified": "20250826142102",
+      "rows": 63804,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200412": {
+      "name": "12_Exportaciones_2004_Diciembre.zip",
+      "size": 13295288,
+      "modified": "20250826142102",
+      "rows": 61432,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200501": {
+      "name": "01_Exportaciones_2005_Enero.zip",
+      "size": 14445427,
+      "modified": "20250730202511",
+      "rows": 56512,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200502": {
+      "name": "02_Exportaciones_2005_Febrero.zip",
+      "size": 15800944,
+      "modified": "20250730202507",
+      "rows": 61756,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200503": {
+      "name": "03_Exportaciones_2005_Marzo.zip",
+      "size": 18067482,
+      "modified": "20250730202510",
+      "rows": 70783,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200504": {
+      "name": "04_Exportaciones_2005_Abril.zip",
+      "size": 19438880,
+      "modified": "20250730202512",
+      "rows": 76199,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200505": {
+      "name": "05_Exportaciones_2005_Mayo.zip",
+      "size": 15720373,
+      "modified": "20260728151354",
+      "rows": 75358,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200506": {
+      "name": "06_Exportaciones_2005_Junio.zip",
+      "size": 19683509,
+      "modified": "20250730202511",
+      "rows": 77159,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200507": {
+      "name": "07_Exportaciones_2005_Julio.zip",
+      "size": 18486562,
+      "modified": "20250730202505",
+      "rows": 72271,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200508": {
+      "name": "08_Exportaciones_2005_Agosto.zip",
+      "size": 19110240,
+      "modified": "20250730202508",
+      "rows": 74602,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200509": {
+      "name": "09_Exportaciones_2005_Septiembre.zip",
+      "size": 20416689,
+      "modified": "20250730202510",
+      "rows": 80045,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200510": {
+      "name": "10_Exportaciones_2005_Octubre.zip",
+      "size": 19225722,
+      "modified": "20250730202507",
+      "rows": 75589,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200511": {
+      "name": "11_Exportaciones_2005_Noviembre.zip",
+      "size": 22241803,
+      "modified": "20250730202506",
+      "rows": 87927,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200512": {
+      "name": "12_Exportaciones_2005_Diciembre.zip",
+      "size": 20042816,
+      "modified": "20250730202511",
+      "rows": 78779,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200601": {
+      "name": "01_Exportaciones_2006_Enero.zip",
+      "size": 12255124,
+      "modified": "20250604142128",
+      "rows": 58653,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200602": {
+      "name": "02_Exportaciones_2006_Febrero.zip",
+      "size": 15803232,
+      "modified": "20250604142128",
+      "rows": 80877,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200603": {
+      "name": "03_Exportaciones_2006_Marzo.zip",
+      "size": 17567660,
+      "modified": "20250604142128",
+      "rows": 84758,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200604": {
+      "name": "04_Exportaciones_2006_Abril.zip",
+      "size": 14947910,
+      "modified": "20250604142118",
+      "rows": 71868,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200605": {
+      "name": "05_Exportaciones_2006_Mayo.zip",
+      "size": 17923563,
+      "modified": "20250604142126",
+      "rows": 86792,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200606": {
+      "name": "06_Exportaciones_2006_Junio.zip",
+      "size": 16601362,
+      "modified": "20250604142118",
+      "rows": 79928,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200607": {
+      "name": "07_Exportaciones_2006_Julio.zip",
+      "size": 16383111,
+      "modified": "20250604142118",
+      "rows": 79141,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200608": {
+      "name": "08_Exportaciones_2006_Agosto.zip",
+      "size": 17810465,
+      "modified": "20250604142126",
+      "rows": 86292,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200609": {
+      "name": "09_Exportaciones_2006_Septiembre.zip",
+      "size": 18631828,
+      "modified": "20250604142126",
+      "rows": 90411,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200610": {
+      "name": "10_Exportaciones_2006_Octubre.zip",
+      "size": 19038336,
+      "modified": "20250604142118",
+      "rows": 92721,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200611": {
+      "name": "11_Exportaciones_2006_Noviembre.zip",
+      "size": 19343055,
+      "modified": "20250604142126",
+      "rows": 94110,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200612": {
+      "name": "12_Exportaciones_2006_Diciembre.zip",
+      "size": 16806137,
+      "modified": "20250604142125",
+      "rows": 80995,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200701": {
+      "name": "01_Exportaciones_2007_Enero.zip",
+      "size": 22142140,
+      "modified": "20250730202512",
+      "rows": 66383,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200702": {
+      "name": "02_Exportaciones_2007_Febrero.zip",
+      "size": 27686942,
+      "modified": "20250730202514",
+      "rows": 82613,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200703": {
+      "name": "03_Exportaciones_2007_Marzo.zip",
+      "size": 31283243,
+      "modified": "20250730202514",
+      "rows": 93821,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200704": {
+      "name": "04_Exportaciones_2007_Abril.zip",
+      "size": 28830119,
+      "modified": "20250730202515",
+      "rows": 84997,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200705": {
+      "name": "05_Exportaciones_2007_Mayo.zip",
+      "size": 31694602,
+      "modified": "20250730202514",
+      "rows": 93691,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200706": {
+      "name": "06_Exportaciones_2007_Junio.zip",
+      "size": 28863152,
+      "modified": "20250730202513",
+      "rows": 85462,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200707": {
+      "name": "07_Exportaciones_2007_Julio.zip",
+      "size": 30020153,
+      "modified": "20250730202512",
+      "rows": 89181,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200708": {
+      "name": "08_Exportaciones_2007_Agosto.zip",
+      "size": 30649359,
+      "modified": "20250730202514",
+      "rows": 91023,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200709": {
+      "name": "09_Exportaciones_2007_Septiembre.zip",
+      "size": 30676992,
+      "modified": "20250730202513",
+      "rows": 91029,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200710": {
+      "name": "10_Exportaciones_2007_Octubre.zip",
+      "size": 33330704,
+      "modified": "20250730202514",
+      "rows": 99256,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200711": {
+      "name": "11_Exportaciones_2007_Noviembre.zip",
+      "size": 33234705,
+      "modified": "20250730202514",
+      "rows": 98799,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200712": {
+      "name": "12_Exportaciones_2007_Diciembre.zip",
+      "size": 30880253,
+      "modified": "20250730202514",
+      "rows": 92151,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200801": {
+      "name": "01_Exportaciones_2008_Enero.zip",
+      "size": 22727984,
+      "modified": "20250604142126",
+      "rows": 72459,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200802": {
+      "name": "02_Exportaciones_2008_Febrero.zip",
+      "size": 26419316,
+      "modified": "20250604142127",
+      "rows": 84233,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200803": {
+      "name": "03_Exportaciones_2008_Marzo.zip",
+      "size": 26139153,
+      "modified": "20250604142127",
+      "rows": 83467,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200804": {
+      "name": "04_Exportaciones_2008_Abril.zip",
+      "size": 28928407,
+      "modified": "20250604142127",
+      "rows": 92382,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200805": {
+      "name": "05_Exportaciones_2008_Mayo.zip",
+      "size": 27041228,
+      "modified": "20250604142127",
+      "rows": 86325,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200806": {
+      "name": "06_Exportaciones_2008_Junio.zip",
+      "size": 26168436,
+      "modified": "20250604142127",
+      "rows": 83705,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200807": {
+      "name": "07_Exportaciones_2008_Julio.zip",
+      "size": 28844464,
+      "modified": "20250604142127",
+      "rows": 91866,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200808": {
+      "name": "08_Exportaciones_2008_Agosto.zip",
+      "size": 24639406,
+      "modified": "20250604142126",
+      "rows": 78585,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200809": {
+      "name": "09_Exportaciones_2008_Septiembre.zip",
+      "size": 20458595,
+      "modified": "20250604142126",
+      "rows": 63958,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200810": {
+      "name": "10_Exportaciones_2008_Octubre.zip",
+      "size": 25174717,
+      "modified": "20250604142127",
+      "rows": 76410,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200811": {
+      "name": "11_Exportaciones_2008_Noviembre.zip",
+      "size": 22608228,
+      "modified": "20250604142127",
+      "rows": 68827,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200812": {
+      "name": "12_Exportaciones_2008_Diciembre.zip",
+      "size": 22600711,
+      "modified": "20250604142127",
+      "rows": 68256,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200901": {
+      "name": "01_Exportaciones_2009_Enero.zip",
+      "size": 19383665,
+      "modified": "20241105185339",
+      "rows": 52493,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200902": {
+      "name": "02_Exportaciones_2009_Febrero.zip",
+      "size": 20325600,
+      "modified": "20241105185338",
+      "rows": 58237,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200903": {
+      "name": "03_Exportaciones_2009_Marzo.zip",
+      "size": 25037348,
+      "modified": "20241105185339",
+      "rows": 72705,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200904": {
+      "name": "04_Exportaciones_2009_Abril.zip",
+      "size": 24365679,
+      "modified": "20260107150510",
+      "rows": 67287,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200905": {
+      "name": "05_Exportaciones_2009_Mayo.zip",
+      "size": 23965942,
+      "modified": "20241105185339",
+      "rows": 69636,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200906": {
+      "name": "06_Exportaciones_2009_Junio.zip",
+      "size": 22834398,
+      "modified": "20241105185339",
+      "rows": 66407,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200907": {
+      "name": "07_Exportaciones_2009_Julio.zip",
+      "size": 26320677,
+      "modified": "20241105185339",
+      "rows": 76563,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200908": {
+      "name": "08_Exportaciones_2009_Agosto.zip",
+      "size": 22611577,
+      "modified": "20241105185339",
+      "rows": 62438,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200909": {
+      "name": "09_Exportaciones_2009_Septiembre.zip",
+      "size": 26907344,
+      "modified": "20241105185339",
+      "rows": 78813,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200910": {
+      "name": "10_Exportaciones_2009_Octubre.zip",
+      "size": 27350954,
+      "modified": "20241105185339",
+      "rows": 75995,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200911": {
+      "name": "11_Exportaciones_2009_Noviembre.zip",
+      "size": 24659873,
+      "modified": "20241105185339",
+      "rows": 71954,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "200912": {
+      "name": "12_Exportaciones_2009_Diciembre.zip",
+      "size": 27024716,
+      "modified": "20261104150156",
+      "rows": 76078,
+      "processed_at": "2026-11-04",
+      "previous": [
+        {
+          "size": 26834967,
+          "modified": "20250806204944",
+          "rows": 76078,
+          "processed_at": "2026-10-14",
+          "replaced_at": "2026-11-04"
+        }
+      ]
+    },
+    "201001": {
+      "name": "01_Exportaciones_2010_Enero.zip",
+      "size": 19648528,
+      "modified": "20241105185340",
+      "rows": 54077,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201002": {
+      "name": "02_Exportaciones_2010_Febrero.zip",
+      "size": 25177056,
+      "modified": "20241105185340",
+      "rows": 69936,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201003": {
+      "name": "03_Exportaciones_2010_Marzo.zip",
+      "size": 30569703,
+      "modified": "20241105185340",
+      "rows": 84980,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201004": {
+      "name": "04_Exportaciones_2010_Abril.zip",
+      "size": 26297730,
+      "modified": "20241105185339",
+      "rows": 73105,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201005": {
+      "name": "05_Exportaciones_2010_Mayo.zip",
+      "size": 27919500,
+      "modified": "20241105185347",
+      "rows": 77986,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201006": {
+      "name": "06_Exportaciones_2010_Junio.zip",
+      "size": 24074509,
+      "modified": "20241105185347",
+      "rows": 66836,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201007": {
+      "name": "07_Exportaciones_2010_Julio.zip",
+      "size": 23277583,
+      "modified": "20241105185347",
+      "rows": 64250,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201008": {
+      "name": "08_Exportaciones_2010_Agosto.zip",
+      "size": 23895815,
+      "modified": "20241105185347",
+      "rows": 66123,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201009": {
+      "name": "09_Exportaciones_2010_Septiembre.zip",
+      "size": 27550758,
+      "modified": "20241105185339",
+      "rows": 76828,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201010": {
+      "name": "10_Exportaciones_2010_Octubre.zip",
+      "size": 26542064,
+      "modified": "20241105185512",
+      "rows": 74213,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201011": {
+      "name": "11_Exportaciones_2010_Noviembre.zip",
+      "size": 24771063,
+      "modified": "20241105185339",
+      "rows": 69211,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201012": {
+      "name": "12_Exportaciones_2010_Diciembre.zip",
+      "size": 28377404,
+      "modified": "20241105185340",
+      "rows": 80258,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201101": {
+      "name": "01_Exportaciones_2011_Enero.zip",
+      "size": 22363297,
+      "modified": "20241105185353",
+      "rows": 62192,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201102": {
+      "name": "02_Exportaciones_2011_Febrero.zip",
+      "size": 23573510,
+      "modified": "20241105185353",
+      "rows": 68290,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201103": {
+      "name": "03_Exportaciones_2011_Marzo.zip",
+      "size": 30275493,
+      "modified": "20241105185353",
+      "rows": 85104,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201104": {
+      "name": "04_Exportaciones_2011_Abril.zip",
+      "size": 26191620,
+      "modified": "20241105185353",
+      "rows": 73300,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201105": {
+      "name": "05_Exportaciones_2011_Mayo.zip",
+      "size": 28304030,
+      "modified": "20241105185353",
+      "rows": 79363,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201106": {
+      "name": "06_Exportaciones_2011_Junio.zip",
+      "size": 28570231,
+      "modified": "20241105185353",
+      "rows": 80956,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201107": {
+      "name": "07_Exportaciones_2011_Julio.zip",
+      "size": 25373356,
+      "modified": "20241105185353",
+      "rows": 71075,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201108": {
+      "name": "08_Exportaciones_2011_Agosto.zip",
+      "size": 28370687,
+      "modified": "20241105185353",
+      "rows": 80114,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201109": {
+      "name": "09_Exportaciones_2011_Septiembre.zip",
+      "size": 25804718,
+      "modified": "20241105185353",
+      "rows": 72322,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201110": {
+      "name": "10_Exportaciones_2011_Octubre.zip",
+      "size": 26769502,
+      "modified": "20241105185353",
+      "rows": 75589,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201111": {
+      "name": "11_Exportaciones_2011_Noviembre.zip",
+      "size": 28050941,
+      "modified": "20241105185353",
+      "rows": 79502,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201112": {
+      "name": "12_Exportaciones_2011_Diciembre.zip",
+      "size": 27694540,
+      "modified": "20241105185353",
+      "rows": 77898,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201201": {
+      "name": "01_Exportaciones_2012_Enero.zip",
+      "size": 23119931,
+      "modified": "20241105185400",
+      "rows": 64403,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201202": {
+      "name": "02_Exportaciones_2012_Febrero.zip",
+      "size": 26485177,
+      "modified": "20241105185354",
+      "rows": 74207,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201203": {
+      "name": "03_Exportaciones_2012_Marzo.zip",
+      "size": 28878817,
+      "modified": "20241105185354",
+      "rows": 81644,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201204": {
+      "name": "04_Exportaciones_2012_Abril.zip",
+      "size": 25144482,
+      "modified": "20241105185354",
+      "rows": 70524,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201205": {
+      "name": "05_Exportaciones_2012_Mayo.zip",
+      "size": 30129956,
+      "modified": "20241105185354",
+      "rows": 84916,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201206": {
+      "name": "06_Exportaciones_2012_Junio.zip",
+      "size": 26299524,
+      "modified": "20241105185354",
+      "rows": 73708,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201207": {
+      "name": "07_Exportaciones_2012_Julio.zip",
+      "size": 29707208,
+      "modified": "20241105185353",
+      "rows": 83812,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201208": {
+      "name": "08_Exportaciones_2012_Agosto.zip",
+      "size": 28505624,
+      "modified": "20241105185400",
+      "rows": 80327,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201209": {
+      "name": "09_Exportaciones_2012_Septiembre.zip",
+      "size": 28390811,
+      "modified": "20241105185400",
+      "rows": 80424,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201210": {
+      "name": "10_Exportaciones_2012_Octubre.zip",
+      "size": 29930765,
+      "modified": "20241105185353",
+      "rows": 84361,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201211": {
+      "name": "11_Exportaciones_2012_Noviembre.zip",
+      "size": 29208382,
+      "modified": "20241105185509",
+      "rows": 83247,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201212": {
+      "name": "12_Exportaciones_2012_Diciembre.zip",
+      "size": 26532558,
+      "modified": "20241105185400",
+      "rows": 74420,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201301": {
+      "name": "01_Exportaciones_2013_Enero.zip",
+      "size": 25078903,
+      "modified": "20241105185405",
+      "rows": 70845,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201302": {
+      "name": "02_Exportaciones_2013_Febrero.zip",
+      "size": 23875238,
+      "modified": "20241105185405",
+      "rows": 71291,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201303": {
+      "name": "03_Exportaciones_2013_Marzo.zip",
+      "size": 23056978,
+      "modified": "20241105185405",
+      "rows": 70493,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201304": {
+      "name": "04_Exportaciones_2013_Abril.zip",
+      "size": 28076932,
+      "modified": "20241105185406",
+      "rows": 84337,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201305": {
+      "name": "05_Exportaciones_2013_Mayo.zip",
+      "size": 28380138,
+      "modified": "20241105185405",
+      "rows": 84875,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201306": {
+      "name": "06_Exportaciones_2013_Junio.zip",
+      "size": 24473308,
+      "modified": "20241105185405",
+      "rows": 73239,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201307": {
+      "name": "07_Exportaciones_2013_Julio.zip",
+      "size": 27951766,
+      "modified": "20241105185405",
+      "rows": 84077,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201308": {
+      "name": "08_Exportaciones_2013_Agosto.zip",
+      "size": 23842067,
+      "modified": "20241105185405",
+      "rows": 70671,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201309": {
+      "name": "09_Exportaciones_2013_Septiembre.zip",
+      "size": 28022989,
+      "modified": "20241105185405",
+      "rows": 78980,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201310": {
+      "name": "10_Exportaciones_2013_Octubre.zip",
+      "size": 29603203,
+      "modified": "20241105185405",
+      "rows": 83704,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201311": {
+      "name": "11_Exportaciones_2013_Noviembre.zip",
+      "size": 28268149,
+      "modified": "20241105185405",
+      "rows": 79726,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201312": {
+      "name": "12_Exportaciones_2013_Diciembre.zip",
+      "size": 26739980,
+      "modified": "20241105185405",
+      "rows": 79435,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201401": {
+      "name": "01_Exportaciones_2014_Enero.zip",
+      "size": 21641001,
+      "modified": "20241105185415",
+      "rows": 63716,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201402": {
+      "name": "02_Exportaciones_2014_Febrero.zip",
+      "size": 24114697,
+      "modified": "20241105185415",
+      "rows": 70891,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201403": {
+      "name": "03_Exportaciones_2014_Marzo.zip",
+      "size": 25405812,
+      "modified": "20241105185406",
+      "rows": 75296,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201404": {
+      "name": "04_Exportaciones_2014_Abril.zip",
+      "size": 25170587,
+      "modified": "20241105185415",
+      "rows": 73933,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201405": {
+      "name": "05_Exportaciones_2014_Mayo.zip",
+      "size": 26863424,
+      "modified": "20241105185406",
+      "rows": 78615,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201406": {
+      "name": "06_Exportaciones_2014_Junio.zip",
+      "size": 22286581,
+      "modified": "20241105185415",
+      "rows": 65511,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201407": {
+      "name": "07_Exportaciones_2014_Julio.zip",
+      "size": 29640274,
+      "modified": "20241105185407",
+      "rows": 87417,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201408": {
+      "name": "08_Exportaciones_2014_Agosto.zip",
+      "size": 25121485,
+      "modified": "20241105185406",
+      "rows": 73725,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201409": {
+      "name": "09_Exportaciones_2014_Septiembre.zip",
+      "size": 27187152,
+      "modified": "20241105185503",
+      "rows": 79610,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201410": {
+      "name": "10_Exportaciones_2014_Octubre.zip",
+      "size": 27568846,
+      "modified": "20241105185407",
+      "rows": 81184,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201411": {
+      "name": "11_Exportaciones_2014_Noviembre.zip",
+      "size": 25886168,
+      "modified": "20241105185406",
+      "rows": 76431,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201412": {
+      "name": "12_Exportaciones_2014_Diciembre.zip",
+      "size": 26257669,
+      "modified": "20241105185406",
+      "rows": 76196,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201501": {
+      "name": "01_Exportaciones_2015_Enero.zip",
+      "size": 20985560,
+      "modified": "20241105185420",
+      "rows": 61172,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201502": {
+      "name": "02_Exportaciones_2015_Febrero.zip",
+      "size": 23830819,
+      "modified": "20241105185420",
+      "rows": 69587,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201503": {
+      "name": "03_Exportaciones_2015_Marzo.zip",
+      "size": 24905779,
+      "modified": "20241105185420",
+      "rows": 73256,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201504": {
+      "name": "04_Exportaciones_2015_Abril.zip",
+      "size": 26172516,
+      "modified": "20241105185420",
+      "rows": 77205,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201505": {
+      "name": "05_Exportaciones_2015_Mayo.zip",
+      "size": 25661734,
+      "modified": "20241105185420",
+      "rows": 74996,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201506": {
+      "name": "06_Exportaciones_2015_Junio.zip",
+      "size": 25659838,
+      "modified": "20241105185420",
+      "rows": 75263,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201507": {
+      "name": "07_Exportaciones_2015_Julio.zip",
+      "size": 26554399,
+      "modified": "20241105185420",
+      "rows": 77733,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201508": {
+      "name": "08_Exportaciones_2015_Agosto.zip",
+      "size": 24627569,
+      "modified": "20241105185420",
+      "rows": 71720,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201509": {
+      "name": "09_Exportaciones_2015_Septiembre.zip",
+      "size": 27288872,
+      "modified": "20241105185420",
+      "rows": 80280,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201510": {
+      "name": "10_Exportaciones_2015_Octubre.zip",
+      "size": 24940587,
+      "modified": "20241105185420",
+      "rows": 73083,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201511": {
+      "name": "11_Exportaciones_2015_Noviembre.zip",
+      "size": 25812629,
+      "modified": "20241105185420",
+      "rows": 76023,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201512": {
+      "name": "12_Exportaciones_2015_Diciembre.zip",
+      "size": 25993139,
+      "modified": "20241105185420",
+      "rows": 75927,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201601": {
+      "name": "01_Exportaciones_2016_Enero.zip",
+      "size": 19855705,
+      "modified": "20241105185427",
+      "rows": 58133,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201602": {
+      "name": "02_Exportaciones_2016_Febrero.zip",
+      "size": 25702435,
+      "modified": "20241105185458",
+      "rows": 75507,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201603": {
+      "name": "03_Exportaciones_2016_Marzo.zip",
+      "size": 25006126,
+      "modified": "20241105185427",
+      "rows": 73322,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201604": {
+      "name": "04_Exportaciones_2016_Abril.zip",
+      "size": 25139205,
+      "modified": "20241105185427",
+      "rows": 73746,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201605": {
+      "name": "05_Exportaciones_2016_Mayo.zip",
+      "size": 25943533,
+      "modified": "20241105185427",
+      "rows": 76249,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201606": {
+      "name": "06_Exportaciones_2016_Junio.zip",
+      "size": 25899408,
+      "modified": "20241105185420",
+      "rows": 76192,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201607": {
+      "name": "07_Exportaciones_2016_Julio.zip",
+      "size": 21813578,
+      "modified": "20241105185420",
+      "rows": 63926,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201608": {
+      "name": "08_Exportaciones_2016_Agosto.zip",
+      "size": 28713689,
+      "modified": "20241105185420",
+      "rows": 85233,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201609": {
+      "name": "09_Exportaciones_2016_Septiembre.zip",
+      "size": 28896101,
+      "modified": "20241105185420",
+      "rows": 80051,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201610": {
+      "name": "10_Exportaciones_2016_Octubre.zip",
+      "size": 25714809,
+      "modified": "20241105185420",
+      "rows": 75483,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201611": {
+      "name": "11_Exportaciones_2016_Noviembre.zip",
+      "size": 26296502,
+      "modified": "20241105185421",
+      "rows": 77265,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201612": {
+      "name": "12_Exportaciones_2016_Diciembre.zip",
+      "size": 28851842,
+      "modified": "20241105185421",
+      "rows": 80002,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201701": {
+      "name": "01_Exportaciones_2017_Enero.zip",
+      "size": 22207072,
+      "modified": "20241105185432",
+      "rows": 64699,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201702": {
+      "name": "02_Exportaciones_2017_Febrero.zip",
+      "size": 25699138,
+      "modified": "20241105185432",
+      "rows": 76543,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201703": {
+      "name": "03_Exportaciones_2017_Marzo.zip",
+      "size": 28360122,
+      "modified": "20241105185432",
+      "rows": 85757,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201704": {
+      "name": "04_Exportaciones_2017_Abril.zip",
+      "size": 25270061,
+      "modified": "20260806184727",
+      "rows": 71662,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201705": {
+      "name": "05_Exportaciones_2017_Mayo.zip",
+      "size": 29075045,
+      "modified": "20241105185431",
+      "rows": 86024,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201706": {
+      "name": "06_Exportaciones_2017_Junio.zip",
+      "size": 27328220,
+      "modified": "20241105185431",
+      "rows": 81029,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201707": {
+      "name": "07_Exportaciones_2017_Julio.zip",
+      "size": 28191817,
+      "modified": "20241105185431",
+      "rows": 83027,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201708": {
+      "name": "08_Exportaciones_2017_Agosto.zip",
+      "size": 28442952,
+      "modified": "20241105185431",
+      "rows": 84070,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201709": {
+      "name": "09_Exportaciones_2017_Septiembre.zip",
+      "size": 27394444,
+      "modified": "20241105185431",
+      "rows": 80800,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201710": {
+      "name": "10_Exportaciones_2017_Octubre.zip",
+      "size": 30262459,
+      "modified": "20241105185431",
+      "rows": 84134,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201711": {
+      "name": "11_Exportaciones_2017_Noviembre.zip",
+      "size": 30031466,
+      "modified": "20241105185432",
+      "rows": 82851,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201712": {
+      "name": "12_Exportaciones_2017_Diciembre.zip",
+      "size": 27114820,
+      "modified": "20241105185432",
+      "rows": 80151,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201801": {
+      "name": "01_Exportaciones_2018_Enero.zip",
+      "size": 25632552,
+      "modified": "20241105185431",
+      "rows": 75307,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201802": {
+      "name": "02_Exportaciones_2018_Febrero.zip",
+      "size": 26220625,
+      "modified": "20241105185431",
+      "rows": 78221,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201803": {
+      "name": "03_Exportaciones_2018_Marzo.zip",
+      "size": 27211189,
+      "modified": "20241105185431",
+      "rows": 80789,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201804": {
+      "name": "04_Exportaciones_2018_Abril.zip",
+      "size": 28294660,
+      "modified": "20241105185431",
+      "rows": 82998,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201805": {
+      "name": "05_Exportaciones_2018_Mayo.zip",
+      "size": 29469235,
+      "modified": "20241105185431",
+      "rows": 87347,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201806": {
+      "name": "06_Exportaciones_2018_Junio.zip",
+      "size": 26482414,
+      "modified": "20241105185448",
+      "rows": 78335,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201807": {
+      "name": "07_Exportaciones_2018_Julio.zip",
+      "size": 29148961,
+      "modified": "20241105185449",
+      "rows": 86508,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201808": {
+      "name": "08_Exportaciones_2018_Agosto.zip",
+      "size": 28560102,
+      "modified": "20241105185448",
+      "rows": 84479,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201809": {
+      "name": "09_Exportaciones_2018_Septiembre.zip",
+      "size": 26875148,
+      "modified": "20241105185448",
+      "rows": 80020,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201810": {
+      "name": "10_Exportaciones_2018_Octubre.zip",
+      "size": 30377108,
+      "modified": "20241105185431",
+      "rows": 89712,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201811": {
+      "name": "11_Exportaciones_2018_Noviembre.zip",
+      "size": 28779314,
+      "modified": "20241105185449",
+      "rows": 85337,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201812": {
+      "name": "12_Exportaciones_2018_Diciembre.zip",
+      "size": 27290423,
+      "modified": "20241105185431",
+      "rows": 81197,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201901": {
+      "name": "01_Exportaciones_2019_Enero.zip",
+      "size": 28327019,
+      "modified": "20241105185452",
+      "rows": 75531,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201902": {
+      "name": "02_Exportaciones_2019_Febrero.zip",
+      "size": 30415786,
+      "modified": "20241105185452",
+      "rows": 81670,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201903": {
+      "name": "03_Exportaciones_2019_Marzo.zip",
+      "size": 31908538,
+      "modified": "20241105185452",
+      "rows": 86176,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201904": {
+      "name": "04_Exportaciones_2019_Abril.zip",
+      "size": 32700222,
+      "modified": "20241105185452",
+      "rows": 88176,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201905": {
+      "name": "05_Exportaciones_2019_Mayo.zip",
+      "size": 34330677,
+      "modified": "20241105185452",
+      "rows": 92407,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201906": {
+      "name": "06_Exportaciones_2019_Junio.zip",
+      "size": 29867877,
+      "modified": "20241105185452",
+      "rows": 80615,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201907": {
+      "name": "07_Exportaciones_2019_Julio.zip",
+      "size": 33032037,
+      "modified": "20241105185452",
+      "rows": 88886,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201908": {
+      "name": "08_Exportaciones_2019_Agosto.zip",
+      "size": 32774501,
+      "modified": "20241105185452",
+      "rows": 88345,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201909": {
+      "name": "09_Exportaciones_2019_Septiembre.zip",
+      "size": 31865206,
+      "modified": "20241105185605",
+      "rows": 85808,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201910": {
+      "name": "10_Exportaciones_2019_Octubre.zip",
+      "size": 33996550,
+      "modified": "20241105185452",
+      "rows": 91659,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201911": {
+      "name": "11_Exportaciones_2019_Noviembre.zip",
+      "size": 31059691,
+      "modified": "20241105185452",
+      "rows": 83664,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "201912": {
+      "name": "12_Exportaciones_2019_Diciembre.zip",
+      "size": 32332324,
+      "modified": "20241105185452",
+      "rows": 87096,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202001": {
+      "name": "01_Exportaciones_2020_Enero.zip",
+      "size": 28488959,
+      "modified": "20241105185622",
+      "rows": 76135,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202002": {
+      "name": "02_Exportaciones_2020_Febrero.zip",
+      "size": 31230405,
+      "modified": "20241105185622",
+      "rows": 84174,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202003": {
+      "name": "03_Exportaciones_2020_Marzo.zip",
+      "size": 30509475,
+      "modified": "20241105185622",
+      "rows": 82263,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202004": {
+      "name": "04_Exportaciones_2020_Abril.zip",
+      "size": 17093598,
+      "modified": "20251104160819",
+      "rows": 51422,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202005": {
+      "name": "05_Exportaciones_2020_Mayo.zip",
+      "size": 18839021,
+      "modified": "20251104160819",
+      "rows": 57100,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202006": {
+      "name": "06_Exportaciones_2020_Junio.zip",
+      "size": 21332812,
+      "modified": "20251104160819",
+      "rows": 64754,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202007": {
+      "name": "07_Exportaciones_2020_Julio.zip",
+      "size": 25802359,
+      "modified": "20251104160820",
+      "rows": 78615,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202008": {
+      "name": "08_Exportaciones_2020_Agosto.zip",
+      "size": 29031069,
+      "modified": "20241105185621",
+      "rows": 78380,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202009": {
+      "name": "09_Exportaciones_2020_Septiembre.zip",
+      "size": 32303871,
+      "modified": "20241105185621",
+      "rows": 87470,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202010": {
+      "name": "10_Exportaciones_2020_Octubre.zip",
+      "size": 31026552,
+      "modified": "20241105185621",
+      "rows": 84094,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202011": {
+      "name": "11_Exportaciones_2020_Noviembre.zip",
+      "size": 33197533,
+      "modified": "20241105185621",
+      "rows": 90212,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202012": {
+      "name": "12_Exportaciones_2020_Diciembre.zip",
+      "size": 35397996,
+      "modified": "20241105185622",
+      "rows": 95659,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202101": {
+      "name": "01_Exportaciones_2021_Enero.zip",
+      "size": 26949312,
+      "modified": "20241105185622",
+      "rows": 72310,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202102": {
+      "name": "02_Exportaciones_2021_Febrero.zip",
+      "size": 32362523,
+      "modified": "20241105185622",
+      "rows": 87390,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202103": {
+      "name": "03_Exportaciones_2021_Marzo.zip",
+      "size": 37972705,
+      "modified": "20241105185622",
+      "rows": 102984,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202104": {
+      "name": "04_Exportaciones_2021_Abril.zip",
+      "size": 34294289,
+      "modified": "20241105185622",
+      "rows": 93033,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202105": {
+      "name": "05_Exportaciones_2021_Mayo.zip",
+      "size": 27262196,
+      "modified": "20241105185626",
+      "rows": 73629,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202106": {
+      "name": "06_Exportaciones_2021_Junio.zip",
+      "size": 31960473,
+      "modified": "20241105185626",
+      "rows": 86552,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202107": {
+      "name": "07_Exportaciones_2021_Julio.zip",
+      "size": 37305965,
+      "modified": "20241105185626",
+      "rows": 101105,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202108": {
+      "name": "08_Exportaciones_2021_Agosto.zip",
+      "size": 36573952,
+      "modified": "20241105185626",
+      "rows": 98993,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202109": {
+      "name": "09_Exportaciones_2021_Septiembre.zip",
+      "size": 34832423,
+      "modified": "20241105185626",
+      "rows": 95741,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202110": {
+      "name": "10_Exportaciones_2021_Octubre.zip",
+      "size": 33342168,
+      "modified": "20261104150125",
+      "rows": 94113,
+      "processed_at": "2026-11-04",
+      "previous": [
+        {
+          "size": 34528018,
+          "modified": "20241105185622",
+          "rows": 94113,
+          "processed_at": "2026-10-14",
+          "replaced_at": "2026-11-04"
+        }
+      ]
+    },
+    "202111": {
+      "name": "11_Exportaciones_2021_Noviembre.zip",
+      "size": 38420743,
+      "modified": "20241105185622",
+      "rows": 104514,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202112": {
+      "name": "12_Exportaciones_2021_Diciembre.zip",
+      "size": 39163887,
+      "modified": "20241105185622",
+      "rows": 106201,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202201": {
+      "name": "01_Exportaciones_2022_Enero.zip",
+      "size": 26170963,
+      "modified": "20241105185654",
+      "rows": 77581,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202202": {
+      "name": "02_Exportaciones_2022_Febrero.zip",
+      "size": 29873763,
+      "modified": "20241105185654",
+      "rows": 89142,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202203": {
+      "name": "03_Exportaciones_2022_Marzo.zip",
+      "size": 34771975,
+      "modified": "20260505150850",
+      "rows": 107253,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202204": {
+      "name": "04_Exportaciones_2022_Abril.zip",
+      "size": 30517213,
+      "modified": "20241105185656",
+      "rows": 91255,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202205": {
+      "name": "05_Exportaciones_2022_Mayo.zip",
+      "size": 33245479,
+      "modified": "20241105185656",
+      "rows": 100023,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202206": {
+      "name": "06_Exportaciones_2022_Junio.zip",
+      "size": 32892593,
+      "modified": "20241105185639",
+      "rows": 98694,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202207": {
+      "name": "07_Exportaciones_2022_Julio.zip",
+      "size": 33146200,
+      "modified": "20241105185639",
+      "rows": 92640,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202208": {
+      "name": "08_Exportaciones_2022_Agosto.zip",
+      "size": 35488544,
+      "modified": "20241105185639",
+      "rows": 107327,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202209": {
+      "name": "09_Exportaciones_2022_Septiembre.zip",
+      "size": 33132663,
+      "modified": "20241105185639",
+      "rows": 99702,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202210": {
+      "name": "10_Exportaciones_2022_Octubre.zip",
+      "size": 32632921,
+      "modified": "20241105185639",
+      "rows": 98120,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202211": {
+      "name": "11_Exportaciones_2022_Noviembre.zip",
+      "size": 33759714,
+      "modified": "20241105185626",
+      "rows": 102251,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202212": {
+      "name": "12_Exportaciones_2022_Diciembre.zip",
+      "size": 34093116,
+      "modified": "20241105185626",
+      "rows": 102795,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202301": {
+      "name": "01_Exportaciones_2023_Enero.zip",
+      "size": 26974946,
+      "modified": "20241105185728",
+      "rows": 83944,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202302": {
+      "name": "02_Exportaciones_2023_Febrero.zip",
+      "size": 30755481,
+      "modified": "20241105185728",
+      "rows": 96265,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202303": {
+      "name": "03_Exportaciones_2023_Marzo.zip",
+      "size": 35476196,
+      "modified": "20241105185728",
+      "rows": 109568,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202304": {
+      "name": "04_Exportaciones_2023_Abril.zip",
+      "size": 30725125,
+      "modified": "20241105185728",
+      "rows": 95467,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202305": {
+      "name": "05_Exportaciones_2023_Mayo.zip",
+      "size": 37114098,
+      "modified": "20241105185728",
+      "rows": 110405,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202306": {
+      "name": "06_Exportaciones_2023_Junio.zip",
+      "size": 32979211,
+      "modified": "20241105185728",
+      "rows": 102445,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202307": {
+      "name": "07_Exportaciones_2023_Julio.zip",
+      "size": 32919844,
+      "modified": "20241105185728",
+      "rows": 102234,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202308": {
+      "name": "08_Exportaciones_2023_Agosto.zip",
+      "size": 33809322,
+      "modified": "20241105185728",
+      "rows": 105597,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202309": {
+      "name": "09_Exportaciones_2023_Septiembre.zip",
+      "size": 33282236,
+      "modified": "20241105185728",
+      "rows": 103379,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202310": {
+      "name": "10_Exportaciones_2023_Octubre.zip",
+      "size": 34575610,
+      "modified": "20241105185728",
+      "rows": 107734,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202311": {
+      "name": "11_Exportaciones_2023_Noviembre.zip",
+      "size": 34396705,
+      "modified": "20241105185728",
+      "rows": 107255,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202312": {
+      "name": "12_Exportaciones_2023_Diciembre.zip",
+      "size": 33740550,
+      "modified": "20241105185729",
+      "rows": 104801,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202401": {
+      "name": "01_Exportaciones_2024_Enero.zip",
+      "size": 32586409,
+      "modified": "20250709145427",
+      "rows": 93035,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202402": {
+      "name": "02_Exportaciones_2024_Febrero.zip",
+      "size": 36641485,
+      "modified": "20250709145427",
+      "rows": 104883,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202403": {
+      "name": "03_Exportaciones_2024_Marzo.zip",
+      "size": 35286473,
+      "modified": "20250709145427",
+      "rows": 100992,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202404": {
+      "name": "04_Exportaciones_2024_Abril.zip",
+      "size": 39451102,
+      "modified": "20250709145427",
+      "rows": 112518,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202405": {
+      "name": "05_Exportaciones_2024_Mayo.zip",
+      "size": 38915871,
+      "modified": "20250709145427",
+      "rows": 110413,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202406": {
+      "name": "06_Exportaciones_2024_Junio.zip",
+      "size": 34453078,
+      "modified": "20250709145427",
+      "rows": 100371,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202407": {
+      "name": "07_Exportaciones_2024_Julio.zip",
+      "size": 40238377,
+      "modified": "20260505150850",
+      "rows": 115639,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202408": {
+      "name": "08_Exportaciones_2024_Agosto.zip",
+      "size": 37473905,
+      "modified": "20250709145427",
+      "rows": 107341,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202409": {
+      "name": "09_Exportaciones_2024_Septiembre.zip",
+      "size": 38405349,
+      "modified": "20250709145428",
+      "rows": 110918,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202410": {
+      "name": "10_Exportaciones_2024_Octubre.zip",
+      "size": 39877805,
+      "modified": "20260505150850",
+      "rows": 114895,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202411": {
+      "name": "11_Exportaciones_2024_Noviembre.zip",
+      "size": 37791888,
+      "modified": "20260505150851",
+      "rows": 109062,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202412": {
+      "name": "12_Exportaciones_2024_Diciembre.zip",
+      "size": 42714874,
+      "modified": "20260903153231",
+      "rows": 122606,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202501": {
+      "name": "01_Exportaciones_2025_Enero.zip",
+      "size": 33591088,
+      "modified": "20250707140728",
+      "rows": 96007,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202502": {
+      "name": "02_Exportaciones_2025_Febrero.zip",
+      "size": 36459717,
+      "modified": "20260903153337",
+      "rows": 106777,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202503": {
+      "name": "03_Exportaciones_2025_Marzo.zip",
+      "size": 41327202,
+      "modified": "20260505150851",
+      "rows": 118759,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202504": {
+      "name": "04_Exportaciones_2025_Abril.zip",
+      "size": 39667548,
+      "modified": "20260903153337",
+      "rows": 113589,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202505": {
+      "name": "05_Exportaciones_2025_Mayo.zip",
+      "size": 41539933,
+      "modified": "20260907193150",
+      "rows": 119088,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202506": {
+      "name": "06_Exportaciones_2025_Junio.zip",
+      "size": 38079120,
+      "modified": "20251006162344",
+      "rows": 109808,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202507": {
+      "name": "07_Exportaciones_2025_Julio.zip",
+      "size": 43263934,
+      "modified": "20251006162337",
+      "rows": 124007,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202508": {
+      "name": "08_Exportaciones_2025_Agosto.zip",
+      "size": 37973832,
+      "modified": "20260303153948",
+      "rows": 108131,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202509": {
+      "name": "09_Exportaciones_2025_Septiembre.zip",
+      "size": 42422558,
+      "modified": "20260903153337",
+      "rows": 121428,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202510": {
+      "name": "10_Exportaciones_2025_Octubre.zip",
+      "size": 40211737,
+      "modified": "20260903153335",
+      "rows": 114773,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202511": {
+      "name": "11_Exportaciones_2025_Noviembre.zip",
+      "size": 38212537,
+      "modified": "20260303153949",
+      "rows": 109801,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202512": {
+      "name": "12_Exportaciones_2025_Diciembre.zip",
+      "size": 41065813,
+      "modified": "20260303153949",
+      "rows": 117396,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202601": {
+      "name": "01_Exportaciones_2026_Enero.zip",
+      "size": 33377280,
+      "modified": "20260903153521",
+      "rows": 94888,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202602": {
+      "name": "02_Exportaciones_2026_Febrero.zip",
+      "size": 36457686,
+      "modified": "20260505150851",
+      "rows": 103673,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202603": {
+      "name": "03_Exportaciones_2026_Marzo.zip",
+      "size": 39818136,
+      "modified": "20260804150204",
+      "rows": 114679,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202604": {
+      "name": "04_Exportaciones_2026_Abril.zip",
+      "size": 37107857,
+      "modified": "20260804150219",
+      "rows": 106100,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202605": {
+      "name": "05_Exportaciones_2026_Mayo.zip",
+      "size": 37598882,
+      "modified": "20260903153521",
+      "rows": 107484,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202606": {
+      "name": "06_Exportaciones_2026_Junio.zip",
+      "size": 36351326,
+      "modified": "20261005150248",
+      "rows": 103180,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202607": {
+      "name": "07_Exportaciones_2026_Julio.zip",
+      "size": 37695413,
+      "modified": "20261005150214",
+      "rows": 107953,
+      "processed_at": "2026-10-14",
+      "previous": []
+    },
+    "202608": {
+      "name": "08_Exportaciones_2026_Agosto.zip",
+      "size": 34160609,
+      "modified": "20261104152610",
+      "rows": 97994,
+      "processed_at": "2026-11-04",
+      "previous": [
+        {
+          "size": 34265105,
+          "modified": "20261005150105",
+          "rows": 97994,
+          "processed_at": "2026-10-14",
+          "replaced_at": "2026-11-04"
+        }
+      ]
+    },
+    "202609": {
+      "name": "09_Exportaciones_2026_Septiembre.zip",
+      "size": 40059271,
+      "modified": "20261104150107",
+      "rows": 115049,
+      "processed_at": "2026-11-04",
+      "previous": []
+    }
+  }
+}
