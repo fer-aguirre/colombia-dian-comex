@@ -194,7 +194,7 @@ Revisando las columnas de todos los meses aparecieron 35 tramos de estructuras d
 | `solo_estructura_vieja` | Columnas sin equivalente en la estructura actual; se mantienen con su nombre original | `NUM_MANIFIESTO`, `PERIODICIDAD_PAGO_CUOTA` |
 | `eliminada` | Columnas que solo valen "1" en todos los meses en que aparecen; no tienen información | `NOMBRE_ADUANA (1)`, `ACTIVO1` |
 
-Si la DIAN publica una columna que esta tabla no contempla, la construcción se detiene: una estructura nueva hay que revisarla antes de unificarla.
+Si la DIAN publica una columna que esta tabla no contempla, la construcción se detiene: una estructura nueva hay que revisarla antes de unificarla. Después de agregarla a `mapeo_columnas.csv` y `esquema_final.csv`, el [diccionario de datos](DICCIONARIO.md) se regenera con `uv run colombia-dian-dictionary` (o `uv run python -m colombia_dian_comex.dictionary`): lo arma desde cero con el estado actual de esas tablas y de la cobertura, así que no hace falta saber qué cambió.
 
 ### 4. Limpieza y tipos
 
@@ -234,6 +234,7 @@ colombia_dian_comex/
 │  ├─ __main__.py             # Permite `python -m colombia_dian_comex` (consultas)
 │  ├─ pipeline.py             # Descarga, conversión y validación
 │  ├─ download.py             # Descarga desde la terminal
+│  ├─ dictionary.py           # Genera DICCIONARIO.md
 │  ├─ build.py                # Tablas finales: unificación, limpieza, tipos, M49
 │  ├─ mapping.py              # Lectura de mapeo_columnas.csv
 │  ├─ query.py                # Consultas y exportación

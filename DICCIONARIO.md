@@ -1,6 +1,6 @@
 # Diccionario de datos
 
-Columnas de las tablas finales (`data/processed/<flujo>_<año>.parquet`), en el orden en que aparecen. Este archivo se genera a partir de [`colombia_dian_comex/esquema_final.csv`](colombia_dian_comex/esquema_final.csv) (tipos), [`colombia_dian_comex/mapeo_columnas.csv`](colombia_dian_comex/mapeo_columnas.csv) (de qué columnas originales sale cada una) y la tabla de cobertura (en qué años tiene datos).
+Columnas de las tablas finales (`data/processed/<flujo>_<año>.parquet`), en el orden en que aparecen. Este archivo se genera con `colombia-dian-dictionary` a partir de [`colombia_dian_comex/esquema_final.csv`](colombia_dian_comex/esquema_final.csv) (tipos), [`colombia_dian_comex/mapeo_columnas.csv`](colombia_dian_comex/mapeo_columnas.csv) (de qué columnas originales sale cada una) y la tabla de cobertura (en qué años tiene datos).
 
 - **Años con datos**: años en los que la columna tiene al menos un valor. Las consultas no muestran las columnas sin datos en ninguno de los años consultados.
 - **Columnas originales**: nombre o nombres con que la DIAN publicó la columna, si alguna vez fue distinto del final. El detalle y la evidencia de cada correspondencia están en `mapeo_columnas.csv`.
