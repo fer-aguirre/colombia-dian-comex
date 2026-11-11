@@ -50,9 +50,9 @@ cd colombia-dian-comex
 uv sync
 ```
 
-`uv sync` crea una carpeta `.venv` con todo lo necesario, incluidos los comandos `colombia-dian-query`, `colombia-dian-download` y `colombia-dian-update`. Los comandos y las consultas encuentran las carpetas `data/` y `outputs/` del proyecto aunque se corran desde otra carpeta.
+`uv sync` crea una carpeta `.venv` con todo lo necesario, incluidos los comandos `colombia-dian-query`, `colombia-dian-sync`, `colombia-dian-download` y `colombia-dian-update`. Los comandos y las consultas encuentran las carpetas `data/` y `outputs/` del proyecto aunque se corran desde otra carpeta.
 
-> **En Windows**, si un comando `uv run colombia-dian-...` falla con un error de que una directiva bloqueó el archivo, usa la forma equivalente con `python -m`: por ejemplo `uv run python -m colombia_dian_comex` en vez de `uv run colombia-dian-query`, y `uv run python -m colombia_dian_comex.download` o `.update` para los otros dos.
+> **En Windows**, si un comando `uv run colombia-dian-...` falla con un error de que una directiva bloqueó el archivo, usa la forma equivalente con `python -m`: por ejemplo `uv run python -m colombia_dian_comex` en vez de `uv run colombia-dian-query`, y `uv run python -m colombia_dian_comex.sync`, `.download` o `.update` para los otros.
 
 ---
 
@@ -60,9 +60,25 @@ uv sync
 
 Las tablas son archivos parquet, uno por flujo y año: `importaciones_2024.parquet` (unos 550 MB), `exportaciones_2024.parquet` (unos 45 MB), etc. Parquet es un formato de tabla comprimido, mucho más liviano y rápido que un CSV; se abre con Python (polars, pandas), R o DuckDB. En total son unos 9,3 GB de importaciones y 1,1 GB de exportaciones.
 
-**No hace falta descargarlas a mano.** Cuando haces una consulta, los años que no están en `data/processed/` se descargan solos desde el [release `datos`](https://github.com/fer-aguirre/colombia-dian-comex/releases/tag/datos) del repositorio en GitHub. Para tener los meses más recientes, borra el archivo del año y vuelve a consultar.
+**No hace falta descargarlas a mano.** Cuando haces una consulta, los años que no están en `data/processed/` se descargan solos desde el [release `datos`](https://github.com/fer-aguirre/colombia-dian-comex/releases/tag/datos) del repositorio en GitHub.
 
 Si prefieres armar todo desde cero con los archivos originales de la DIAN, sigue los pasos de [Cómo se arman las tablas](#cómo-se-arman-las-tablas). Hacen falta unos 75 GB libres y la descarga tarda alrededor de 30 horas, pero se puede interrumpir y retomar.
+
+### Actualizar tus datos
+
+Los datos en GitHub se actualizan solos todas las semanas, pero tu copia no. Para ponerla al día, corre estos dos comandos desde la carpeta del proyecto:
+
+```bash
+git pull
+uv run colombia-dian-sync
+```
+
+- `git pull` trae los últimos cambios del proyecto.
+- `colombia-dian-sync` compara tus archivos de `data/processed/` con los de GitHub y descarga solo los que estén viejos. Si ya están al día, no descarga nada. Solo revisa los años que ya tienes; los demás se descargan cuando los consultas.
+
+Si un archivo tuyo es distinto y más nuevo que el de GitHub (por ejemplo, porque lo armaste tú), no lo reemplaza: te avisa y lo deja como está.
+
+En Windows, si el comando está bloqueado, usa `uv run python -m colombia_dian_comex.sync`.
 
 ---
 
@@ -251,6 +267,7 @@ colombia_dian_comex/
 │  ├─ build.py                # Tablas finales: unificación, limpieza, tipos, M49
 │  ├─ mapping.py              # Lectura de mapeo_columnas.csv
 │  ├─ query.py                # Consultas y exportación
+│  ├─ sync.py                 # Pone al día los datos locales con el release
 │  ├─ update.py               # Actualización con los meses nuevos o corregidos
 │  ├─ utils.py                # Rutas a las carpetas del proyecto
 │  ├─ mapeo_columnas.csv      # Columna original → columna final, con evidencia

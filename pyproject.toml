@@ -22,6 +22,7 @@ dependencies = [
 colombia-dian-dictionary = "colombia_dian_comex.dictionary:main"
 colombia-dian-download = "colombia_dian_comex.download:main"
 colombia-dian-query = "colombia_dian_comex.query:main"
+colombia-dian-sync = "colombia_dian_comex.sync:main"
 colombia-dian-update = "colombia_dian_comex.update:main"
 
 [build-system]
