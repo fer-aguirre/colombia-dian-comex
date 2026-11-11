@@ -1,14 +1,19 @@
 """Consulta y exportación de las bases de importaciones y exportaciones de la DIAN.
 
-Funciona tanto como librería (`from colombia_dian_comex.query import query_comex`)
-como CLI (`colombia-dian-query importaciones --years 2024 --codigo 2701`, o
-`python -m colombia_dian_comex importaciones ...` si Windows bloquea el
-ejecutable). El archivo exportado es CSV por defecto
-(`formato`/--formato/-f también acepta "xlsx" y "parquet") y va por defecto
-al directorio actual; usar `output_dir`/--output/-o para exportarlo a otra
-carpeta (que se crea si no existe). El notebook de consulta pasa
-`output_dir=utils.outputs_tables_dir()` para que sus exports vayan a
-`outputs/tables/`.
+Funciona tanto como librería como CLI (`colombia-dian-query`, o
+`python -m colombia_dian_comex` si Windows bloquea el ejecutable):
+
+    from colombia_dian_comex import Consulta, export_query_result, query_data
+
+    consulta = Consulta(years=[2024, 2025], tipo_regimen="i", codigo="2701")
+    df_result = query_data(consulta)
+    export_query_result(df_result, consulta)
+
+El archivo exportado es CSV por defecto (`formato`/--formato/-f también acepta
+"xlsx" y "parquet") y va por defecto al directorio actual; usar
+`output_dir`/--output/-o para exportarlo a otra carpeta (que se crea si no
+existe). Los notebooks pasan `output_dir=utils.outputs_tables_dir()`. El
+nombre del archivo lo arma `Consulta.export_filename` (ver `consulta.py`).
 
 El resultado no incluye las columnas que no tienen ningún dato en los años
 consultados (por ejemplo, las de la estructura de 2001-2004 en una consulta
@@ -33,6 +38,7 @@ from tqdm.auto import tqdm
 
 from colombia_dian_comex import utils
 from colombia_dian_comex.build import COVERAGE_FILENAME, final_path
+from colombia_dian_comex.consulta import TIPO_REGIMEN_MAP, Consulta
 from colombia_dian_comex.pipeline import Flow
 
 logger = logging.getLogger(__name__)
@@ -54,6 +60,7 @@ NIT_COLUMNS = {
     Flow.IMPORTACIONES: "NIT_IMPORTADOR",
     Flow.EXPORTACIONES: "NIT_EXPORTADOR",
 }
+# Subpartida NANDINA, ya guardada como 10 dígitos sin puntos (ver build).
 SUBPARTIDA_COLUMNS = {
     Flow.IMPORTACIONES: "SUBPARTIDA_ARANCELARIA",
     Flow.EXPORTACIONES: "SUBPARTIDA",
@@ -61,21 +68,6 @@ SUBPARTIDA_COLUMNS = {
 
 # Formatos de archivo aceptados para exportar el resultado de una consulta.
 EXPORT_FORMATS = ("csv", "xlsx", "parquet")
-
-# Matches any character that isn't a digit, to strip separators from codes.
-NON_DIGIT_PATTERN = re.compile(r"\D+")
-
-
-def _digits(code: str) -> str:
-    """Strip separators from a subpartida or NIT (e.g. "27.01" -> "2701").
-
-    Args:
-        code: Code, with or without separators.
-
-    Returns:
-        The code with any non-digit characters removed.
-    """
-    return NON_DIGIT_PATTERN.sub("", code)
 
 
 def download_release_asset(filename: str) -> Path:
@@ -156,89 +148,78 @@ def columns_without_data(flow: Flow, years: Sequence[int]) -> list[str]:
     )
 
 
-def query_comex(
-    flujo: str | Flow,
-    years: int | Sequence[int],
-    nombre: str | None = None,
-    codigo: str | Sequence[str] | None = None,
-    nit: str | Sequence[str] | None = None,
-) -> pl.DataFrame:
-    """Consulta las tablas de importaciones o exportaciones de la DIAN.
+def query_data(consulta: Consulta) -> pl.DataFrame:
+    """Consulta la base de importaciones o exportaciones de la DIAN.
+
+    Agrega dos columnas derivadas de PERIODO (un entero aaaamm): AÑO y MES.
+    Si las tablas de los años consultados no existen localmente, se
+    descargan primero desde el release en GitHub (ver RELEASE_DOWNLOAD_URL).
 
     Args:
-        flujo: "importaciones" o "exportaciones".
-        years: Año o lista de años a consultar (no hace falta que sean consecutivos).
-        nombre: Nombre (o parte del nombre) del importador o exportador. Se
-            busca como texto literal y no distingue mayúsculas/minúsculas. En
-            exportaciones, el nombre solo existe desde 2007; antes buscar por NIT.
-        codigo: Subpartida arancelaria (NCM) o lista de subpartidas,
-            completas (10 dígitos) o solo el comienzo; los puntos son
-            opcionales (ej. "2701" o "27.01").
-        nit: NIT o lista de NIT del importador o exportador (sin dígito de
-            verificación). Los puntos o guiones se ignoran.
+        consulta: Parámetros de la búsqueda (régimen, años, nombre,
+            subpartida NANDINA y/o NIT).
 
     Returns:
         DataFrame de polars con las filas que cumplen todos los filtros, sin
         las columnas que no tienen datos en los años consultados.
-
-    Raises:
-        ValueError: Si no se indica ninguno de `nombre`, `codigo` o `nit`.
     """
-    flow = Flow(flujo)
-    if nombre is None and codigo is None and nit is None:
-        raise ValueError("Debe indicar al menos `nombre`, `codigo` o `nit`.")
-    years_list = [years] if isinstance(years, int) else list(years)
+    flow = consulta.regimen_value
 
     filters = []
-    if nombre is not None:
+    if consulta.nombre_value is not None:
         # Escapado para que caracteres como "." o "(" se busquen literalmente.
         filters.append(
-            pl.col(NAME_COLUMNS[flow]).str.contains(f"(?i){re.escape(nombre)}")
+            pl.col(NAME_COLUMNS[flow]).str.contains(
+                f"(?i){re.escape(consulta.nombre_value)}"
+            )
         )
-    if nit is not None:
-        nits = [_digits(value) for value in ([nit] if isinstance(nit, str) else nit)]
-        filters.append(pl.col(NIT_COLUMNS[flow]).is_in(nits))
-    if codigo is not None:
-        codes = [
-            _digits(code) for code in ([codigo] if isinstance(codigo, str) else codigo)
-        ]
+    if consulta.nit_values:
+        filters.append(pl.col(NIT_COLUMNS[flow]).is_in(consulta.nit_values))
+    if consulta.codigo_values:
+        # La columna ya tiene solo dígitos, igual que los códigos normalizados.
         filters.append(
             pl.any_horizontal(
-                pl.col(SUBPARTIDA_COLUMNS[flow]).str.starts_with(code) for code in codes
+                pl.col(SUBPARTIDA_COLUMNS[flow]).str.starts_with(code)
+                for code in consulta.codigo_values
             )
         )
 
-    paths = [_local_or_download(final_path(flow, year)) for year in years_list]
-    df_result = pl.scan_parquet(paths).filter(*filters).collect()
-    return df_result.drop(columns_without_data(flow, years_list), strict=False)
+    # Hay un archivo por flujo y año, así que el año se filtra eligiendo archivos.
+    paths = [
+        _local_or_download(final_path(flow, year)) for year in consulta.year_values
+    ]
+    df_result = (
+        pl.scan_parquet(paths)
+        .filter(*filters)
+        .with_columns(
+            (pl.col("PERIODO") // 100).cast(pl.Int64).alias("AÑO"),
+            (pl.col("PERIODO") % 100).cast(pl.Int64).alias("MES"),
+        )
+        .collect()
+    )
+    return df_result.drop(
+        columns_without_data(flow, consulta.year_values), strict=False
+    )
 
 
 def export_query_result(
     df_result: pl.DataFrame,
-    flujo: str | Flow,
-    query_years: int | Sequence[int],
-    query_nombre: str | None = None,
-    query_codigo: str | Sequence[str] | None = None,
-    query_nit: str | Sequence[str] | None = None,
+    consulta: Consulta,
     output_dir: Path | None = None,
     formato: str = "csv",
 ) -> Path | None:
     """Exporta el resultado de una consulta a un archivo.
 
-    El nombre del archivo se arma con los parámetros de la consulta:
-    `<flujo>_<nombre>_<codigo>_<nit>_<año o rango>.<formato>`.
+    El nombre del archivo se arma a partir de la consulta, con la fecha y
+    hora de exportación, hasta segundos (ver `Consulta.export_filename`).
 
     Args:
-        df_result: DataFrame a exportar.
-        flujo: Flujo consultado.
-        query_years: Año o lista de años consultados.
-        query_nombre: Nombre consultado (o None).
-        query_codigo: Subpartida(s) consultada(s) (o None).
-        query_nit: NIT consultado(s) (o None).
+        df_result: DataFrame a exportar, resultado de `query_data(consulta)`.
+        consulta: La misma consulta usada para obtener `df_result`.
         output_dir: Carpeta donde escribir el archivo. Si es `None`, se usa
             el directorio actual. Se crea automáticamente si no existe.
-        formato: "csv" (default), "xlsx" o "parquet". No distingue
-            mayúsculas/minúsculas.
+        formato: Formato de exportación: "csv" (default), "xlsx" o
+            "parquet". No distingue mayúsculas/minúsculas.
 
     Returns:
         La ruta del archivo generado, o None si no había filas para exportar.
@@ -251,28 +232,16 @@ def export_query_result(
         raise ValueError(
             f"formato inválido: {formato!r}. Valores válidos: {EXPORT_FORMATS}."
         )
+
     if df_result.height == 0:
         logger.info("La consulta no devolvió filas. No se generó ningún archivo.")
         return None
 
-    years_list = [query_years] if isinstance(query_years, int) else list(query_years)
-    start_year, end_year = min(years_list), max(years_list)
-    year_suffix = (
-        f"{start_year}-{end_year}" if start_year != end_year else str(start_year)
-    )
-
-    name_parts = [Flow(flujo).value]
-    if query_nombre:
-        # Solo letras, números y guiones bajos, para que sea un nombre de archivo válido.
-        name_parts.append(re.sub(r"\W+", "_", query_nombre.strip().lower()).strip("_"))
-    for query_codes in (query_codigo, query_nit):
-        if query_codes:
-            codes = [query_codes] if isinstance(query_codes, str) else query_codes
-            name_parts.append("-".join(_digits(code) for code in codes))
-
     export_dir = output_dir if output_dir is not None else Path.cwd()
-    export_dir.mkdir(parents=True, exist_ok=True)
-    export_path = export_dir / f"{'_'.join(name_parts)}_{year_suffix}.{formato}"
+    if not export_dir.exists():
+        logger.info("El directorio de salida no existe, se crea: %s", export_dir)
+        export_dir.mkdir(parents=True)
+    export_path = export_dir / consulta.export_filename(formato)
 
     logger.info("Exportando %d filas a: %s", df_result.height, export_path)
     if formato == "csv":
@@ -281,11 +250,12 @@ def export_query_result(
         df_result.write_excel(export_path)
     else:
         df_result.write_parquet(export_path)
+    logger.info("Exportación completa.")
     return export_path
 
 
 def _build_parser() -> argparse.ArgumentParser:
-    """Construye el parser de argumentos de la CLI de consulta.
+    """Construye el parser de argumentos de la CLI `colombia-dian-query`.
 
     Returns:
         Parser de argparse configurado con las opciones de la consulta.
@@ -294,17 +264,19 @@ def _build_parser() -> argparse.ArgumentParser:
         prog="colombia-dian-query",
         description=(
             "Consulta las bases de importaciones o exportaciones de la DIAN por año, "
-            "nombre del importador/exportador, subpartida (--codigo) y/o NIT, y "
-            "exporta el resultado (CSV por defecto, o XLSX/Parquet con --formato) "
-            "en el directorio actual o en la carpeta indicada con --output. Debe "
-            "indicarse --nombre, --codigo y/o --nit."
+            "nombre del importador/exportador, subpartida NANDINA (--codigo) y/o "
+            "NIT, y exporta el resultado (CSV por defecto, o XLSX/Parquet con "
+            "--formato) en el directorio actual o en la carpeta indicada con "
+            "--output. Debe indicarse --nombre, --codigo y/o --nit."
         ),
     )
     parser.add_argument(
-        "flujo",
+        "-r",
+        "--tipo-regimen",
         type=str.lower,
-        choices=[flow.value for flow in Flow],
-        help="importaciones o exportaciones.",
+        required=True,
+        choices=list(TIPO_REGIMEN_MAP),
+        help="Base a consultar: i (importaciones) o e (exportaciones).",
     )
     parser.add_argument(
         "-y",
@@ -322,7 +294,8 @@ def _build_parser() -> argparse.ArgumentParser:
         default=None,
         help=(
             "Nombre (o parte del nombre) del importador o exportador (texto literal, no "
-            "distingue mayúsculas/minúsculas). En exportaciones, solo desde 2007."
+            "distingue mayúsculas/minúsculas). En exportaciones, solo desde 2007, y a "
+            'veces figura como "PERSONA NATURAL": para no perder filas, usar --nit.'
         ),
     )
     parser.add_argument(
@@ -333,8 +306,8 @@ def _build_parser() -> argparse.ArgumentParser:
         default=None,
         metavar="SUBPARTIDA",
         help=(
-            "Una o más subpartidas arancelarias (NCM) o su comienzo, con o sin "
-            "puntos (ej. --codigo 2701 84.71)."
+            "Una o más subpartidas arancelarias NANDINA (10 dígitos) o su comienzo, "
+            "con o sin puntos (ej. --codigo 2701 84.71)."
         ),
     )
     parser.add_argument(
@@ -343,7 +316,10 @@ def _build_parser() -> argparse.ArgumentParser:
         nargs="+",
         default=None,
         metavar="NIT",
-        help="Uno o más NIT del importador o exportador, sin dígito de verificación.",
+        help=(
+            "Uno o más NIT del importador o exportador, sin dígito de verificación. "
+            "Los puntos o guiones se ignoran."
+        ),
     )
     parser.add_argument(
         "-o",
@@ -351,7 +327,10 @@ def _build_parser() -> argparse.ArgumentParser:
         type=Path,
         default=None,
         metavar="RUTA",
-        help="Carpeta donde escribir el archivo. Por defecto, el directorio actual.",
+        help=(
+            "Carpeta donde escribir el archivo exportado. Por defecto es el "
+            "directorio actual. Se crea automáticamente si no existe."
+        ),
     )
     parser.add_argument(
         "-f",
@@ -360,7 +339,7 @@ def _build_parser() -> argparse.ArgumentParser:
         default="csv",
         choices=EXPORT_FORMATS,
         metavar="FORMATO",
-        help="Formato de exportación: csv (default), xlsx o parquet.",
+        help="Formato de exportación: csv (default), xlsx o parquet. No distingue mayúsculas/minúsculas.",
     )
     parser.add_argument(
         "-v",
@@ -379,28 +358,32 @@ def main(argv: Sequence[str] | None = None) -> int:
             usan los de `sys.argv`.
 
     Returns:
-        Código de salida del proceso: 0 si la consulta se ejecutó bien.
+        Código de salida del proceso: 0 si la consulta se ejecutó
+        correctamente. Si los argumentos son inválidos, argparse termina el
+        proceso con código 2.
     """
     parser = _build_parser()
     args = parser.parse_args(argv)
-    logging.basicConfig(
-        level=logging.DEBUG if args.verbose else logging.INFO, format="%(message)s"
-    )
-    if args.nombre is None and args.codigo is None and args.nit is None:
-        parser.error("Debe indicar al menos --nombre, --codigo o --nit.")
 
-    df_result = query_comex(
-        args.flujo, args.years, nombre=args.nombre, codigo=args.codigo, nit=args.nit
+    logging.basicConfig(
+        level=logging.DEBUG if args.verbose else logging.INFO,
+        format="%(message)s",
     )
+
+    try:
+        consulta = Consulta(
+            years=args.years,
+            tipo_regimen=args.tipo_regimen,
+            nombre=args.nombre,
+            codigo=args.codigo,
+            nit=args.nit,
+        )
+    except ValueError as error:
+        parser.error(str(error))
+
+    df_result = query_data(consulta)
     export_query_result(
-        df_result,
-        args.flujo,
-        args.years,
-        query_nombre=args.nombre,
-        query_codigo=args.codigo,
-        query_nit=args.nit,
-        output_dir=args.output,
-        formato=args.formato,
+        df_result, consulta, output_dir=args.output, formato=args.formato
     )
     return 0
 

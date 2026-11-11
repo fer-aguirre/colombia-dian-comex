@@ -31,7 +31,7 @@ Este proyecto toma esos archivos y arma **una tabla por flujo y año**:
 
 **Si prefieres la terminal:**
 ```bash
-uv run colombia-dian-query importaciones --years 2024 --codigo 2701
+uv run colombia-dian-query -r i --years 2024 --codigo 2701
 ```
 
 **Si vas a analizar los datos:** lee primero [Qué tener en cuenta al analizar](#qué-tener-en-cuenta-al-analizar) y el [diccionario de datos](DICCIONARIO.md).
@@ -68,32 +68,44 @@ Si prefieres armar todo desde cero con los archivos originales de la DIAN, sigue
 
 ## Consultar los datos
 
-Las consultas funcionan igual desde un notebook o desde la terminal. Hay que indicar el flujo, los años y al menos un **nombre**, un **código** (subpartida) o un **NIT**, para no recorrer millones de filas sin acotar.
+Las consultas funcionan igual desde un notebook o desde la terminal. Hay que indicar el régimen (importaciones o exportaciones), los años y al menos un **nombre**, un **código** (subpartida) o un **NIT**, para no recorrer millones de filas sin acotar. Importaciones y exportaciones son bases separadas, con columnas distintas, así que cada consulta usa una sola.
 
-| Filtro | Qué es | Ejemplo |
-|---|---|---|
-| `flujo` | `importaciones` o `exportaciones` | `"importaciones"` |
-| `years` | Año o lista de años (no hace falta que sean consecutivos) | `2024` / `[2023, 2024, 2025]` |
-| `nombre` *(opcional)* | Nombre de la empresa colombiana que importa o exporta. Busca coincidencias parciales, sin distinguir mayúsculas. En exportaciones solo existe desde 2007. | `"acme"` |
-| `codigo` *(opcional)* | Subpartida arancelaria (código NCM), completa (10 dígitos) o solo el comienzo; los puntos son opcionales. Uno o varios | `"2701"` / `"27.01"` / `["2701", "2704"]` |
-| `nit` *(opcional)* | NIT de la empresa, sin dígito de verificación. Uno o varios | `"890900608"` |
+| Filtro (Python) | Opción (terminal) | Qué es | Ejemplo |
+|---|---|---|---|
+| `tipo_regimen` | `-r/--tipo-regimen` | `i` (importaciones) o `e` (exportaciones) | `"i"` |
+| `years` | `-y/--years` | Año o lista de años (no hace falta que sean consecutivos) | `2024` / `[2023, 2024, 2025]` |
+| `nombre` *(opcional)* | `-n/--nombre` | Nombre de la empresa colombiana que importa o exporta. Busca coincidencias parciales, sin distinguir mayúsculas. En exportaciones solo existe desde 2007, y a veces figura como "PERSONA NATURAL": para no perder filas, conviene buscar por NIT. | `"acme"` |
+| `codigo` *(opcional)* | `-c/--codigo` | Subpartida arancelaria NANDINA, completa (10 dígitos) o solo el comienzo; los puntos son opcionales. Uno o varios | `"2701"` / `"27.01"` / `["2701", "2704"]` |
+| `nit` *(opcional)* | `--nit` | NIT de la empresa, sin dígito de verificación; los puntos son opcionales. Uno o varios | `"890900608"` |
 
-**Desde un notebook:**
+**Desde un notebook o desde Python:** la búsqueda se define una sola vez con `Consulta`, y la usan tanto la consulta como la exportación.
 ```python
-from colombia_dian_comex import utils
-from colombia_dian_comex.query import export_query_result, query_comex
+from colombia_dian_comex import Consulta, export_query_result, query_data, utils
 
-resultado = query_comex("importaciones", [2024, 2025], codigo="2701")
-export_query_result(resultado, "importaciones", [2024, 2025], query_codigo="2701",
-                    output_dir=utils.outputs_tables_dir(), formato="xlsx")
+consulta = Consulta(years=[2024, 2025], tipo_regimen="i", codigo="2701")
+resultado = query_data(consulta)
+export_query_result(
+    resultado, consulta, output_dir=utils.outputs_tables_dir(), formato="xlsx"
+)
 ```
+`Consulta` revisa los valores al crearse y da un error si falta algo o algo no es válido, por ejemplo, si no hay años, si el régimen no es `i` ni `e`, si el nombre está vacío o si un código no tiene dígitos.
 
 **Desde la terminal:**
 ```bash
-uv run colombia-dian-query importaciones --years 2024 2025 -c 2701 -f xlsx
-uv run colombia-dian-query exportaciones --years 2023 --nombre "acme" -o outputs/tables
+uv run colombia-dian-query -r i --years 2024 2025 -c 2701 -f xlsx
+uv run colombia-dian-query -r e --years 2023 --nombre "acme" -o outputs/tables
+uv run colombia-dian-query -r e --years 2024 --nit 901012419
 ```
-Por defecto guarda un CSV en la carpeta desde la que corres el comando. Con `-o` eliges otra carpeta y con `-f` el formato: `csv`, `xlsx` o `parquet`. Todas las opciones aparecen con `--help`.
+Por defecto guarda un CSV en la carpeta desde la que corres el comando. Con `-o` eliges otra carpeta y con `-f` el formato: `csv`, `xlsx` o `parquet`. Con `-v` muestra más mensajes. Todas las opciones aparecen con `--help`. Si Windows bloquea el comando, usa `uv run python -m colombia_dian_comex` con las mismas opciones (ver [Instalación](#instalación)).
+
+**Nombre del archivo exportado:** se arma con la búsqueda y la fecha y hora de exportación (hora local, hasta segundos), así que nunca reemplaza un archivo anterior:
+```
+co_<régimen>_<nombre>_<subpartidas>_nit<NIT>_<años>_<AAAAMMDDTHHMMSS>.<formato>
+ej. co_importacion_acme_2701-8420_2019-2021+2024_20261111T153012.csv
+```
+Las partes que no se usaron se omiten. El nombre se pasa a minúsculas y sin acentos, y se recorta a 40 caracteres. Se escriben hasta 3 subpartidas o NIT (`01-02-03-y5mas`). Los años seguidos van como rango y los sueltos se unen con `+`. Si la consulta no devuelve filas, no se escribe ningún archivo.
+
+**El resultado agrega las columnas `AÑO` y `MES`** (números enteros), tomadas de `PERIODO` (aaaamm), igual que en los proyectos de Argentina y Uruguay.
 
 **El resultado solo trae las columnas que tienen datos en los años consultados.** Una consulta de 2020 a 2026 no muestra las columnas de los formatos viejos de la DIAN (por ejemplo `NUMERO_SERIE_2001_2004`) ni las que la DIAN dejó siempre vacías en esos años; una de 2001 no muestra las columnas que todavía no existían. Las columnas con datos se mantienen aunque todos sus valores sean 0: un 0 es un valor (por ejemplo, "no se cobró antidumping"), no un dato faltante.
 
@@ -230,8 +242,9 @@ Una corrida procesa como mucho 6 GB de archivos de la DIAN (unas 3,5 horas de de
 ```
 colombia_dian_comex/
 ├─ colombia_dian_comex/       # Código del proyecto
-│  ├─ __init__.py             # Expone query_comex y export_query_result
+│  ├─ __init__.py             # Expone Consulta, query_data y export_query_result
 │  ├─ __main__.py             # Permite `python -m colombia_dian_comex` (consultas)
+│  ├─ consulta.py             # Parámetros de la búsqueda y nombre del archivo exportado
 │  ├─ pipeline.py             # Descarga, conversión y validación
 │  ├─ download.py             # Descarga desde la terminal
 │  ├─ dictionary.py           # Genera DICCIONARIO.md
