@@ -2463,6 +2463,14 @@
       "rows": 335100,
       "processed_at": "2026-11-04",
       "previous": []
+    },
+    "202609": {
+      "name": "09_Importaciones_2026_Septiembre.zip",
+      "size": 304167675,
+      "modified": "20261118151919",
+      "rows": 371689,
+      "processed_at": "2026-11-23",
+      "previous": []
     }
   },
   "exportaciones": {
